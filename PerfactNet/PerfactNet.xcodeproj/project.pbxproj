@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7800491725B80DA800EF2ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800491625B80DA800EF2ACC /* AppDelegate.swift */; };
+		7800491925B80DA800EF2ACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800491825B80DA800EF2ACC /* SceneDelegate.swift */; };
+		7800491B25B80DA800EF2ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800491A25B80DA800EF2ACC /* ViewController.swift */; };
+		7800491E25B80DA800EF2ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7800491C25B80DA800EF2ACC /* Main.storyboard */; };
+		7800492025B80DA900EF2ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7800491F25B80DA900EF2ACC /* Assets.xcassets */; };
+		7800492325B80DA900EF2ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7800492125B80DA900EF2ACC /* LaunchScreen.storyboard */; };
+		7800492E25B80DA900EF2ACC /* PerfactNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800492D25B80DA900EF2ACC /* PerfactNetTests.swift */; };
+		7800493925B80DA900EF2ACC /* PerfactNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800493825B80DA900EF2ACC /* PerfactNetUITests.swift */; };
+		7800496D25B81A7D00EF2ACC /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800496C25B81A7D00EF2ACC /* BaseModel.swift */; };
+		7800497525B8203B00EF2ACC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800497425B8203B00EF2ACC /* API.swift */; };
+		7800497A25B8208800EF2ACC /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800497925B8208800EF2ACC /* NewsModel.swift */; };
+		783E06A725B8FD4C00845361 /* HahaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E06A625B8FD4C00845361 /* HahaCell.swift */; };
+		783E06D025B90F0300845361 /* Moyaconfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E06CF25B90F0300845361 /* Moyaconfig.swift */; };
+		783E06D525B90F7B00845361 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E06D425B90F7B00845361 /* HttpRequest.swift */; };
+		783E06DB25B90FF800845361 /* KeyedDecodingContainer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E06D925B90FF800845361 /* KeyedDecodingContainer+Extension.swift */; };
+		783E06DC25B90FF800845361 /* SaveFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E06DA25B90FF800845361 /* SaveFiles.swift */; };
+		A2ADBAD1446C90A873CCE379 /* Pods_PerfactNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76D2D8DF256959A479A9917 /* Pods_PerfactNet.framework */; };
+		E6DA41B7DA2F64F63390229F /* Pods_PerfactNet_PerfactNetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EC8BEC86080B045095D0A8 /* Pods_PerfactNet_PerfactNetUITests.framework */; };
+		EC45E305F05AEFF38367D1D3 /* Pods_PerfactNetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D868BFD89A6A0F1D38FBCE01 /* Pods_PerfactNetTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7800492A25B80DA900EF2ACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7800490B25B80DA800EF2ACC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7800491225B80DA800EF2ACC;
+			remoteInfo = PerfactNet;
+		};
+		7800493525B80DA900EF2ACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7800490B25B80DA800EF2ACC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7800491225B80DA800EF2ACC;
+			remoteInfo = PerfactNet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009825E88D1A2B8C9F75E0FE /* Pods-PerfactNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfactNet.release.xcconfig"; path = "Target Support Files/Pods-PerfactNet/Pods-PerfactNet.release.xcconfig"; sourceTree = "<group>"; };
+		19EC8BEC86080B045095D0A8 /* Pods_PerfactNet_PerfactNetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfactNet_PerfactNetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F398AD00541AF07F7BC07F /* Pods-PerfactNetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfactNetTests.release.xcconfig"; path = "Target Support Files/Pods-PerfactNetTests/Pods-PerfactNetTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CC82C8032718315571F8015 /* Pods-PerfactNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfactNet.debug.xcconfig"; path = "Target Support Files/Pods-PerfactNet/Pods-PerfactNet.debug.xcconfig"; sourceTree = "<group>"; };
+		7800491325B80DA800EF2ACC /* PerfactNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfactNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7800491625B80DA800EF2ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7800491825B80DA800EF2ACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7800491A25B80DA800EF2ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7800491D25B80DA800EF2ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7800491F25B80DA900EF2ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7800492225B80DA900EF2ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7800492425B80DA900EF2ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7800492925B80DA900EF2ACC /* PerfactNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfactNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7800492D25B80DA900EF2ACC /* PerfactNetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfactNetTests.swift; sourceTree = "<group>"; };
+		7800492F25B80DA900EF2ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7800493425B80DA900EF2ACC /* PerfactNetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfactNetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7800493825B80DA900EF2ACC /* PerfactNetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfactNetUITests.swift; sourceTree = "<group>"; };
+		7800493A25B80DA900EF2ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7800496C25B81A7D00EF2ACC /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		7800497425B8203B00EF2ACC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7800497925B8208800EF2ACC /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		783E06A625B8FD4C00845361 /* HahaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HahaCell.swift; sourceTree = "<group>"; };
+		783E06CF25B90F0300845361 /* Moyaconfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moyaconfig.swift; sourceTree = "<group>"; };
+		783E06D425B90F7B00845361 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		783E06D925B90FF800845361 /* KeyedDecodingContainer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extension.swift"; sourceTree = "<group>"; };
+		783E06DA25B90FF800845361 /* SaveFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveFiles.swift; sourceTree = "<group>"; };
+		B7CCD766A12E50F1DAC2E325 /* Pods-PerfactNet-PerfactNetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfactNet-PerfactNetUITests.release.xcconfig"; path = "Target Support Files/Pods-PerfactNet-PerfactNetUITests/Pods-PerfactNet-PerfactNetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D68FCE9663C2C2D59337B726 /* Pods-PerfactNet-PerfactNetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfactNet-PerfactNetUITests.debug.xcconfig"; path = "Target Support Files/Pods-PerfactNet-PerfactNetUITests/Pods-PerfactNet-PerfactNetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D868BFD89A6A0F1D38FBCE01 /* Pods_PerfactNetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfactNetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76D2D8DF256959A479A9917 /* Pods_PerfactNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfactNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F902AFAD80B4339E78A6EA43 /* Pods-PerfactNetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfactNetTests.debug.xcconfig"; path = "Target Support Files/Pods-PerfactNetTests/Pods-PerfactNetTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7800491025B80DA800EF2ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2ADBAD1446C90A873CCE379 /* Pods_PerfactNet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7800492625B80DA900EF2ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC45E305F05AEFF38367D1D3 /* Pods_PerfactNetTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7800493125B80DA900EF2ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DA41B7DA2F64F63390229F /* Pods_PerfactNet_PerfactNetUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B0382ABB810186A4A5B6923 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E76D2D8DF256959A479A9917 /* Pods_PerfactNet.framework */,
+				19EC8BEC86080B045095D0A8 /* Pods_PerfactNet_PerfactNetUITests.framework */,
+				D868BFD89A6A0F1D38FBCE01 /* Pods_PerfactNetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7800490A25B80DA800EF2ACC = {
+			isa = PBXGroup;
+			children = (
+				7800491525B80DA800EF2ACC /* PerfactNet */,
+				7800492C25B80DA900EF2ACC /* PerfactNetTests */,
+				7800493725B80DA900EF2ACC /* PerfactNetUITests */,
+				7800491425B80DA800EF2ACC /* Products */,
+				A507089DC79920927B7096C5 /* Pods */,
+				5B0382ABB810186A4A5B6923 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7800491425B80DA800EF2ACC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7800491325B80DA800EF2ACC /* PerfactNet.app */,
+				7800492925B80DA900EF2ACC /* PerfactNetTests.xctest */,
+				7800493425B80DA900EF2ACC /* PerfactNetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7800491525B80DA800EF2ACC /* PerfactNet */ = {
+			isa = PBXGroup;
+			children = (
+				7800495125B80F4800EF2ACC /* Network */,
+				7800491625B80DA800EF2ACC /* AppDelegate.swift */,
+				7800491825B80DA800EF2ACC /* SceneDelegate.swift */,
+				783E06D925B90FF800845361 /* KeyedDecodingContainer+Extension.swift */,
+				783E06DA25B90FF800845361 /* SaveFiles.swift */,
+				7800491A25B80DA800EF2ACC /* ViewController.swift */,
+				7800496C25B81A7D00EF2ACC /* BaseModel.swift */,
+				7800497925B8208800EF2ACC /* NewsModel.swift */,
+				7800497425B8203B00EF2ACC /* API.swift */,
+				783E06A625B8FD4C00845361 /* HahaCell.swift */,
+				7800491C25B80DA800EF2ACC /* Main.storyboard */,
+				7800491F25B80DA900EF2ACC /* Assets.xcassets */,
+				7800492125B80DA900EF2ACC /* LaunchScreen.storyboard */,
+				7800492425B80DA900EF2ACC /* Info.plist */,
+			);
+			path = PerfactNet;
+			sourceTree = "<group>";
+		};
+		7800492C25B80DA900EF2ACC /* PerfactNetTests */ = {
+			isa = PBXGroup;
+			children = (
+				7800492D25B80DA900EF2ACC /* PerfactNetTests.swift */,
+				7800492F25B80DA900EF2ACC /* Info.plist */,
+			);
+			path = PerfactNetTests;
+			sourceTree = "<group>";
+		};
+		7800493725B80DA900EF2ACC /* PerfactNetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7800493825B80DA900EF2ACC /* PerfactNetUITests.swift */,
+				7800493A25B80DA900EF2ACC /* Info.plist */,
+			);
+			path = PerfactNetUITests;
+			sourceTree = "<group>";
+		};
+		7800495125B80F4800EF2ACC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				783E06CF25B90F0300845361 /* Moyaconfig.swift */,
+				783E06D425B90F7B00845361 /* HttpRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A507089DC79920927B7096C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CC82C8032718315571F8015 /* Pods-PerfactNet.debug.xcconfig */,
+				009825E88D1A2B8C9F75E0FE /* Pods-PerfactNet.release.xcconfig */,
+				D68FCE9663C2C2D59337B726 /* Pods-PerfactNet-PerfactNetUITests.debug.xcconfig */,
+				B7CCD766A12E50F1DAC2E325 /* Pods-PerfactNet-PerfactNetUITests.release.xcconfig */,
+				F902AFAD80B4339E78A6EA43 /* Pods-PerfactNetTests.debug.xcconfig */,
+				33F398AD00541AF07F7BC07F /* Pods-PerfactNetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7800491225B80DA800EF2ACC /* PerfactNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7800493D25B80DA900EF2ACC /* Build configuration list for PBXNativeTarget "PerfactNet" */;
+			buildPhases = (
+				1B11ADA722659478E504116F /* [CP] Check Pods Manifest.lock */,
+				7800490F25B80DA800EF2ACC /* Sources */,
+				7800491025B80DA800EF2ACC /* Frameworks */,
+				7800491125B80DA800EF2ACC /* Resources */,
+				6B1736217171D77AD3C4D0F2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerfactNet;
+			productName = PerfactNet;
+			productReference = 7800491325B80DA800EF2ACC /* PerfactNet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7800492825B80DA900EF2ACC /* PerfactNetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7800494025B80DA900EF2ACC /* Build configuration list for PBXNativeTarget "PerfactNetTests" */;
+			buildPhases = (
+				D419FDD61D9A0D82D6165597 /* [CP] Check Pods Manifest.lock */,
+				7800492525B80DA900EF2ACC /* Sources */,
+				7800492625B80DA900EF2ACC /* Frameworks */,
+				7800492725B80DA900EF2ACC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7800492B25B80DA900EF2ACC /* PBXTargetDependency */,
+			);
+			name = PerfactNetTests;
+			productName = PerfactNetTests;
+			productReference = 7800492925B80DA900EF2ACC /* PerfactNetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7800493325B80DA900EF2ACC /* PerfactNetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7800494325B80DA900EF2ACC /* Build configuration list for PBXNativeTarget "PerfactNetUITests" */;
+			buildPhases = (
+				67632646C1551E23AC5934B1 /* [CP] Check Pods Manifest.lock */,
+				7800493025B80DA900EF2ACC /* Sources */,
+				7800493125B80DA900EF2ACC /* Frameworks */,
+				7800493225B80DA900EF2ACC /* Resources */,
+				C76DF6FF15D498BF7984C553 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7800493625B80DA900EF2ACC /* PBXTargetDependency */,
+			);
+			name = PerfactNetUITests;
+			productName = PerfactNetUITests;
+			productReference = 7800493425B80DA900EF2ACC /* PerfactNetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7800490B25B80DA800EF2ACC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					7800491225B80DA800EF2ACC = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					7800492825B80DA900EF2ACC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 7800491225B80DA800EF2ACC;
+					};
+					7800493325B80DA900EF2ACC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 7800491225B80DA800EF2ACC;
+					};
+				};
+			};
+			buildConfigurationList = 7800490E25B80DA800EF2ACC /* Build configuration list for PBXProject "PerfactNet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7800490A25B80DA800EF2ACC;
+			productRefGroup = 7800491425B80DA800EF2ACC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7800491225B80DA800EF2ACC /* PerfactNet */,
+				7800492825B80DA900EF2ACC /* PerfactNetTests */,
+				7800493325B80DA900EF2ACC /* PerfactNetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7800491125B80DA800EF2ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7800492325B80DA900EF2ACC /* LaunchScreen.storyboard in Resources */,
+				7800492025B80DA900EF2ACC /* Assets.xcassets in Resources */,
+				7800491E25B80DA800EF2ACC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7800492725B80DA900EF2ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7800493225B80DA900EF2ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B11ADA722659478E504116F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PerfactNet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67632646C1551E23AC5934B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PerfactNet-PerfactNetUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B1736217171D77AD3C4D0F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PerfactNet/Pods-PerfactNet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PerfactNet/Pods-PerfactNet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PerfactNet/Pods-PerfactNet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76DF6FF15D498BF7984C553 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PerfactNet-PerfactNetUITests/Pods-PerfactNet-PerfactNetUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PerfactNet-PerfactNetUITests/Pods-PerfactNet-PerfactNetUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PerfactNet-PerfactNetUITests/Pods-PerfactNet-PerfactNetUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D419FDD61D9A0D82D6165597 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PerfactNetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7800490F25B80DA800EF2ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7800497A25B8208800EF2ACC /* NewsModel.swift in Sources */,
+				7800491B25B80DA800EF2ACC /* ViewController.swift in Sources */,
+				783E06D025B90F0300845361 /* Moyaconfig.swift in Sources */,
+				783E06A725B8FD4C00845361 /* HahaCell.swift in Sources */,
+				7800491725B80DA800EF2ACC /* AppDelegate.swift in Sources */,
+				783E06DB25B90FF800845361 /* KeyedDecodingContainer+Extension.swift in Sources */,
+				7800491925B80DA800EF2ACC /* SceneDelegate.swift in Sources */,
+				783E06D525B90F7B00845361 /* HttpRequest.swift in Sources */,
+				7800497525B8203B00EF2ACC /* API.swift in Sources */,
+				783E06DC25B90FF800845361 /* SaveFiles.swift in Sources */,
+				7800496D25B81A7D00EF2ACC /* BaseModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7800492525B80DA900EF2ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7800492E25B80DA900EF2ACC /* PerfactNetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7800493025B80DA900EF2ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7800493925B80DA900EF2ACC /* PerfactNetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7800492B25B80DA900EF2ACC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7800491225B80DA800EF2ACC /* PerfactNet */;
+			targetProxy = 7800492A25B80DA900EF2ACC /* PBXContainerItemProxy */;
+		};
+		7800493625B80DA900EF2ACC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7800491225B80DA800EF2ACC /* PerfactNet */;
+			targetProxy = 7800493525B80DA900EF2ACC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7800491C25B80DA800EF2ACC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7800491D25B80DA800EF2ACC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7800492125B80DA900EF2ACC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7800492225B80DA900EF2ACC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7800493B25B80DA900EF2ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7800493C25B80DA900EF2ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7800493E25B80DA900EF2ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC82C8032718315571F8015 /* Pods-PerfactNet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = PerfactNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.PerfactNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7800493F25B80DA900EF2ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 009825E88D1A2B8C9F75E0FE /* Pods-PerfactNet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = PerfactNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.PerfactNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7800494125B80DA900EF2ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F902AFAD80B4339E78A6EA43 /* Pods-PerfactNetTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = PerfactNetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.PerfactNetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerfactNet.app/PerfactNet";
+			};
+			name = Debug;
+		};
+		7800494225B80DA900EF2ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F398AD00541AF07F7BC07F /* Pods-PerfactNetTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = PerfactNetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.PerfactNetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerfactNet.app/PerfactNet";
+			};
+			name = Release;
+		};
+		7800494425B80DA900EF2ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D68FCE9663C2C2D59337B726 /* Pods-PerfactNet-PerfactNetUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = PerfactNetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.PerfactNetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PerfactNet;
+			};
+			name = Debug;
+		};
+		7800494525B80DA900EF2ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7CCD766A12E50F1DAC2E325 /* Pods-PerfactNet-PerfactNetUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = PerfactNetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.network.PerfactNetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PerfactNet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7800490E25B80DA800EF2ACC /* Build configuration list for PBXProject "PerfactNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7800493B25B80DA900EF2ACC /* Debug */,
+				7800493C25B80DA900EF2ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7800493D25B80DA900EF2ACC /* Build configuration list for PBXNativeTarget "PerfactNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7800493E25B80DA900EF2ACC /* Debug */,
+				7800493F25B80DA900EF2ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7800494025B80DA900EF2ACC /* Build configuration list for PBXNativeTarget "PerfactNetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7800494125B80DA900EF2ACC /* Debug */,
+				7800494225B80DA900EF2ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7800494325B80DA900EF2ACC /* Build configuration list for PBXNativeTarget "PerfactNetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7800494425B80DA900EF2ACC /* Debug */,
+				7800494525B80DA900EF2ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7800490B25B80DA800EF2ACC /* Project object */;
+}

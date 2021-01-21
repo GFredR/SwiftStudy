@@ -1,0 +1,6 @@
+framework module Pods_PerfactNetTests {
+  umbrella header "Pods-PerfactNetTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
