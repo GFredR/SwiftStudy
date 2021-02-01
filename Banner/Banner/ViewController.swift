@@ -6,9 +6,10 @@
 //
 
 import UIKit
-
+import Kingfisher
 let ScreenWidth = UIScreen.main.bounds.size.width
 let ScreenHeight = UIScreen.main.bounds.size.height / 4
+//let a: Int64 = 9223372036854775807
 
 
 
@@ -23,9 +24,26 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         for i in 0..<(imgArr.count + 1) {
             let imgView = UIImageView(frame: CGRect(x: CGFloat(i) * ScreenWidth, y: 0, width: ScreenWidth, height: ScreenHeight))
             if i == imgArr.count {
-                imgView.image = UIImage(named: imgArr[0])
+                imgView.kf.setImage(with: URL(string: imgArr[0]))
+                
+                imgView.kf.setImage(with: URL(string: imgArr[0]), placeholder: UIImage(named: "1"), options: [KingfisherOptionsInfoItem.fromMemoryCacheOrRefresh]) { (result, error) in
+                    if (result != 0) {
+                        print(error)
+                    } else {
+                        print(result)
+                    }
+                    
+                }
+
             } else {
-                imgView.image = UIImage(named: imgArr[i])
+                imgView.kf.setImage(with: URL(string: imgArr[i]), placeholder: UIImage(named: "1"), options: [KingfisherOptionsInfoItem.fromMemoryCacheOrRefresh]) { (result, error) in
+                    if (result != 0) {
+                        print(error)
+                    } else {
+                        print(result)
+                    }
+                    
+                }
             }
             scrollView.addSubview(imgView)
 //            imgView.addSubview(bannerPage)
@@ -50,7 +68,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     var bannerTimer: Timer?
     
     lazy var imgArr: Array<String> = {
-        let arr = ["1","2","3"]
+        let arr = ["https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170525%2Fe69c89b503784e6e87f935b79bcdbc97_th.jpg&refer=http%3A%2F%2Fimg.mp.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614756966&t=725f7891a5fc26d93ce949256d9ed9e3","https://pic.rmb.bdstatic.com/79360353dd34cc12cfb4eec7705a04c0.jpeg","https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp3.music.126.net%2Fqqg-4aKh-CU0suX0de8Pkg%3D%3D%2F2903810209476180.jpg%3Fparam%3D640y300&refer=http%3A%2F%2Fp3.music.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614757032&t=0473e5c764b79b91b073e8893dff35b5","https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2F4152d610f4ecd85e09dd73d2bc29d7534a58c4a3.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614760562&t=965dc692a0519a98d8fa4efd16928580"]
         return arr
     }()
     lazy var pageCount: Int = {
@@ -78,6 +96,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         view.addSubview(bannerView)
         view.addSubview(bannerPage)
+//        print("max value: \(Int64.max)")
         // Do any additional setup after loading the view.
     }
 
