@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ComprehensivePractice_ComprehensivePracticeUITests : NSObject
+@end
+@implementation PodsDummy_Pods_ComprehensivePractice_ComprehensivePracticeUITests
+@end

@@ -1,0 +1,6 @@
+framework module Pods_ComprehensivePractice_ComprehensivePracticeUITests {
+  umbrella header "Pods-ComprehensivePractice-ComprehensivePracticeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
