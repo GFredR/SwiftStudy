@@ -11,7 +11,8 @@ public extension URL {
         if targetPath.isEmpty {
             self = target.baseURL
         } else {
-            self = target.baseURL.appendingPathComponent(targetPath)
+            let urlWithPath = target.baseURL.absoluteString + targetPath
+            self = URL(string: urlWithPath) ?? target.baseURL
         }
     }
 }

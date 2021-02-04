@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BD4F4426-D2A6-4912-BF72-762D8DC71C61"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25CC9445-9575-4D99-841C-92077CED83F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprehensivePractice/Tools/Network/NewsApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "path"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "25CC9445-9575-4D99-841C-92077CED83F6 - ccb20b8a18d60caa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComprehensivePractice.NewsApi.path.getter : Swift.String"
+                  moduleName = "ComprehensivePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/ComprehensivePractice/ComprehensivePractice/Tools/Network/NewsApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  uuid = "25CC9445-9575-4D99-841C-92077CED83F6 - ccb20b8a18d60caa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComprehensivePractice.NewsApi.path.getter : Swift.String"
+                  moduleName = "ComprehensivePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/ComprehensivePractice/ComprehensivePractice/Tools/Network/NewsApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "861">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2F4F9D4-5AD4-4F58-9546-6704AE7B3744"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprehensivePractice/Tools/Network/NewsApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "path"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "F2F4F9D4-5AD4-4F58-9546-6704AE7B3744 - ccb20b8a18d60caa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComprehensivePractice.NewsApi.path.getter : Swift.String"
+                  moduleName = "ComprehensivePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/ComprehensivePractice/ComprehensivePractice/Tools/Network/NewsApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  uuid = "F2F4F9D4-5AD4-4F58-9546-6704AE7B3744 - ccb20b8a18d60caa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComprehensivePractice.NewsApi.path.getter : Swift.String"
+                  moduleName = "ComprehensivePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/ComprehensivePractice/ComprehensivePractice/Tools/Network/NewsApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "861">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B2168BD-C3A6-4EF4-B6EE-6871E0B53B7D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprehensivePractice/Tools/Network/HttpRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "loadData(target:model:cache:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C01DC55-FA76-4853-9438-073F61B4F330"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprehensivePractice/Tools/Network/NewsApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "task"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4389D70A-CBF2-46BD-8094-EFD0C9A7AC8A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprehensivePractice/Tools/Network/HttpRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "loadData(target:model:cache:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B0C7A6E-01AE-4993-98DB-DE296AAA03C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprehensivePractice/Tools/Network/MoyaConfig.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "appendCommonParams()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40AD39B2-9426-4A53-B858-F4BB9254DB4E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../PerfactNet/PerfactNet/Network/HttpRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "loadData(target:model:cache:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
