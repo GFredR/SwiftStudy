@@ -31,13 +31,22 @@
                                     <action selector="signinAction:" destination="LP5-Zb-WsB" eventType="touchUpInside" id="EvC-vk-3di"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signin-icon" translatesAutoresizingMaskIntoConstraints="NO" id="k8n-Ak-mUu">
+                                <rect key="frame" x="69" y="44" width="277" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="D6e-By-JC2"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OYs-ur-j47"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="o4E-0p-6yi" firstAttribute="leading" secondItem="OYs-ur-j47" secondAttribute="leading" constant="50" id="3YD-45-EpQ"/>
+                            <constraint firstItem="OYs-ur-j47" firstAttribute="trailing" secondItem="k8n-Ak-mUu" secondAttribute="trailing" constant="68" id="CGm-6x-a03"/>
                             <constraint firstItem="OYs-ur-j47" firstAttribute="bottom" secondItem="o4E-0p-6yi" secondAttribute="bottom" constant="196" id="I85-nm-ZXh"/>
+                            <constraint firstItem="k8n-Ak-mUu" firstAttribute="top" secondItem="OYs-ur-j47" secondAttribute="top" id="QMq-RK-ZtZ"/>
                             <constraint firstItem="OYs-ur-j47" firstAttribute="trailing" secondItem="o4E-0p-6yi" secondAttribute="trailing" constant="50" id="boD-2Y-bnd"/>
+                            <constraint firstItem="k8n-Ak-mUu" firstAttribute="leading" secondItem="OYs-ur-j47" secondAttribute="leading" constant="69" id="sWo-31-C9v"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,6 +56,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="signin-icon" width="600" height="569"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

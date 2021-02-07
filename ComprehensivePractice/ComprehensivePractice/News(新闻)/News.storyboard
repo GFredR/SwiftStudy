@@ -59,30 +59,28 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="新闻摘要" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTr-0e-miB">
-                                                    <rect key="frame" x="165" y="44" width="239" height="63"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <color key="textColor" systemColor="labelColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKp-Fd-2SU">
+                                                    <rect key="frame" x="165" y="51" width="239" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="NKp-Fd-2SU" firstAttribute="top" secondItem="usY-G1-WOl" secondAttribute="bottom" constant="15" id="0qQ-EQ-7pj"/>
                                                 <constraint firstItem="usY-G1-WOl" firstAttribute="top" secondItem="ZlT-Du-FsS" secondAttribute="top" id="1KR-D8-AOy"/>
                                                 <constraint firstAttribute="bottom" secondItem="ZlT-Du-FsS" secondAttribute="bottom" constant="15" id="23M-m9-XIo"/>
-                                                <constraint firstItem="bTr-0e-miB" firstAttribute="top" secondItem="usY-G1-WOl" secondAttribute="bottom" constant="8" symbolic="YES" id="6l1-hs-cid"/>
                                                 <constraint firstItem="ZlT-Du-FsS" firstAttribute="top" secondItem="Pgk-mY-WVL" secondAttribute="top" constant="15" id="BXN-Fx-3rZ"/>
-                                                <constraint firstItem="bTr-0e-miB" firstAttribute="leading" secondItem="usY-G1-WOl" secondAttribute="leading" id="GDM-rK-1fv"/>
                                                 <constraint firstItem="usY-G1-WOl" firstAttribute="leading" secondItem="ZlT-Du-FsS" secondAttribute="trailing" constant="5" id="L94-eg-TZs"/>
-                                                <constraint firstItem="bTr-0e-miB" firstAttribute="bottom" secondItem="ZlT-Du-FsS" secondAttribute="bottom" id="XBZ-VV-KYc"/>
+                                                <constraint firstItem="NKp-Fd-2SU" firstAttribute="trailing" secondItem="usY-G1-WOl" secondAttribute="trailing" id="ecp-Fg-kVP"/>
                                                 <constraint firstAttribute="trailing" secondItem="usY-G1-WOl" secondAttribute="trailing" constant="10" id="oFS-oC-QfJ"/>
                                                 <constraint firstItem="ZlT-Du-FsS" firstAttribute="leading" secondItem="Pgk-mY-WVL" secondAttribute="leading" constant="10" id="ptu-t4-ayT"/>
-                                                <constraint firstItem="bTr-0e-miB" firstAttribute="trailing" secondItem="usY-G1-WOl" secondAttribute="trailing" id="xRL-bQ-FlN"/>
+                                                <constraint firstItem="NKp-Fd-2SU" firstAttribute="leading" secondItem="usY-G1-WOl" secondAttribute="leading" id="uOe-2Y-Lmo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="newsDetail" destination="bTr-0e-miB" id="DM5-9Z-0k9"/>
                                             <outlet property="newsImgView" destination="ZlT-Du-FsS" id="cnB-Sp-kM0"/>
+                                            <outlet property="newsTime" destination="NKp-Fd-2SU" id="Bra-nx-qSO"/>
                                             <outlet property="newsTitleLabel" destination="usY-G1-WOl" id="H8M-Nt-dXR"/>
                                         </connections>
                                     </tableViewCell>
@@ -112,9 +110,6 @@
     </scenes>
     <resources>
         <image name="list.dash" catalog="system" width="128" height="85"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

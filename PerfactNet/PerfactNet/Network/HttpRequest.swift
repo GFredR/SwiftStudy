@@ -24,16 +24,16 @@ public class HttpRequest {
 //            networkLoggerPlugin
             ])
         //如果需要读取缓存，则优先读取缓存内容
-        if let cache = cache, let data = SaveFiles.read(path: target.path) {
+        if let cache = cache, let data = GSaveFiles.read(path: target.path) {
             let model = try? JSONDecoder().decode(D.self, from: data)
             cache(model)
         }else {
             //读取缓存速度较快，无需显示hud；仅从网络加载数据时，显示hud。
-//            ProgressHUD.show()
+            GFRProgressHUD.show()
         }
         
         provider.request(target) { result in
-//            ProgressHUD.hide()
+            GFRProgressHUD.hide()
             switch result {
             case let .success(response):
                 let model = try? response.map(D.self)

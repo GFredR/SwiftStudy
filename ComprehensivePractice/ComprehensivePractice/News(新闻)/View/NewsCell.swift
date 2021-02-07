@@ -10,7 +10,7 @@ import UIKit
 class NewsCell: UITableViewCell {
 
     @IBOutlet weak var newsTitleLabel: UILabel!
-    @IBOutlet weak var newsDetail: UITextView!
+    @IBOutlet weak var newsTime: UILabel!
     @IBOutlet weak var newsImgView: UIImageView!
     var model: NewsModel.NewsResult.NewsData? {
         didSet {
@@ -35,7 +35,7 @@ extension NewsCell {
             return
         }
         self.newsTitleLabel.text = model.title
-        self.newsDetail.text = model.date
+        self.newsTime.text = model.date
         self.newsImgView.setNetImage(url: model.thumbnail_pic_s)
     }
 }

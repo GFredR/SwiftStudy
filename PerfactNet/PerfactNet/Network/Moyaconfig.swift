@@ -8,14 +8,14 @@
 import Foundation
 import Moya
 
-#warning("下面的代码需要根据项目进行更改")
+
 /**
  1.配置TargetType协议可以一次性处理的参数
 
  - Todo: 根据自己的需要更改，不能统一处理的移除下面的代码，并在DMAPI中实现
 
  **/
-let BaseUrl = "http://v.juhe.cn/toutiao/"
+let BaseUrl = "http://v.juhe.cn/"
 public extension TargetType {
     var baseURL: URL {
         return URL(string: BaseUrl) ?? URL(string: "http://v.juhe.cn/toutiao/index?".removingPercentEncoding!)!
