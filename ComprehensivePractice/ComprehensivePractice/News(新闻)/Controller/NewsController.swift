@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import MJRefresh
 class NewsController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var newsTableView: UITableView!
     var newsModel: NewsModel?
@@ -33,13 +33,13 @@ class NewsController: UIViewController, UITableViewDelegate, UITableViewDataSour
 // MARK: -UIRefreshControl设置
 extension NewsController {
     func setRefreshSetting() -> Void {
-        refreshTool.addTarget(self, action: #selector(reloadNewsData), for: .valueChanged)
-        newsTableView.addSubview(refreshTool)
+        newsTableView.mj_header = MJRefreshNormalHeader.init(refreshingTarget: self, refreshingAction: #selector(reloadNewsData))
+
     }
     @objc func reloadNewsData() -> Void {
         HttpRequest.loadData(target: NewsApi.newsList(type: "shehui", key: "644dfb94bbda2b99f35a9756e76f2223"), model: NewsModel.self) { (model) in
             self.newsModel = model
-            self.refreshTool.endRefreshing()
+            self.newsTableView.mj_header?.endRefreshing()
             self.newsTableView.reloadData()
         } failure: { (errcode, message) in
             print(message)

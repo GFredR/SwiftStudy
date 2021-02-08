@@ -7,6 +7,7 @@ target 'ComprehensivePractice' do
 pod 'Moya'
 pod 'Kingfisher'
 pod 'MBProgressHUD'
+pod 'MJRefresh'
   # Pods for ComprehensivePractice
 
   target 'ComprehensivePracticeTests' do
