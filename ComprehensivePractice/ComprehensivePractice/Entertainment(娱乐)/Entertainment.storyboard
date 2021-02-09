@@ -32,21 +32,67 @@
                     <view key="view" contentMode="scaleToFill" id="4mR-zH-xuT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-dm-wLJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JokeCell" rowHeight="159" id="hG4-En-zmW" customClass="JokeCell" customModule="ComprehensivePractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="159"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hG4-En-zmW" id="Qp1-bS-Ubw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uJ-4J-3Tv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="4uJ-4J-3Tv" secondAttribute="trailing" id="KjG-Zc-owF"/>
+                                                <constraint firstItem="4uJ-4J-3Tv" firstAttribute="top" secondItem="Qp1-bS-Ubw" secondAttribute="top" id="aM3-X5-fma"/>
+                                                <constraint firstItem="4uJ-4J-3Tv" firstAttribute="leading" secondItem="Qp1-bS-Ubw" secondAttribute="leading" id="ceW-ph-nkm"/>
+                                                <constraint firstAttribute="bottom" secondItem="4uJ-4J-3Tv" secondAttribute="bottom" id="sU0-nt-Jkf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="jokeTextView" destination="4uJ-4J-3Tv" id="aqu-EZ-rlh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Np4-0x-oxw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aVO-dm-wLJ" firstAttribute="leading" secondItem="Np4-0x-oxw" secondAttribute="leading" id="GIg-Pj-1TX"/>
+                            <constraint firstItem="aVO-dm-wLJ" firstAttribute="top" secondItem="Np4-0x-oxw" secondAttribute="top" id="Zgm-KI-BnO"/>
+                            <constraint firstItem="Np4-0x-oxw" firstAttribute="bottom" secondItem="aVO-dm-wLJ" secondAttribute="bottom" id="lX0-xo-aJI"/>
+                            <constraint firstItem="Np4-0x-oxw" firstAttribute="trailing" secondItem="aVO-dm-wLJ" secondAttribute="trailing" id="zo4-eM-Eks"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="娱乐" image="sparkles" catalog="system" selectedImage="sparkle" id="aHA-5y-llV"/>
                     <navigationItem key="navigationItem" title="娱乐" id="w5C-Jb-MUP"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="jokeTable" destination="aVO-dm-wLJ" id="dxL-LE-PYc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joP-H8-gJP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="151"/>
+            <point key="canvasLocation" x="250.72463768115944" y="150.66964285714286"/>
         </scene>
     </scenes>
     <resources>
         <image name="sparkle" catalog="system" width="128" height="121"/>
         <image name="sparkles" catalog="system" width="112" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
