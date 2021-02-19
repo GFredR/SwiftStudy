@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		781AF82625DF82E900D28EF5 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781AF82525DF82E900D28EF5 /* BannerView.swift */; };
 		785F9C8425CFBB91000C29BF /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F9C8325CFBB91000C29BF /* Screen.swift */; };
 		7876E9DA25CB9E6900BF16AB /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7876E9D825CB9E6900BF16AB /* HttpRequest.swift */; };
 		7876E9DB25CB9E6900BF16AB /* Moyaconfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7876E9D925CB9E6900BF16AB /* Moyaconfig.swift */; };
@@ -68,6 +69,7 @@
 		37B881B7C95D795655E223A2 /* Pods_ComprehensivePracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComprehensivePracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC8E30E8E4A43C7FB72AAC /* Pods_ComprehensivePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComprehensivePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52772FFD15A8FC724374CD6C /* Pods-ComprehensivePractice-ComprehensivePracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComprehensivePractice-ComprehensivePracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-ComprehensivePractice-ComprehensivePracticeUITests/Pods-ComprehensivePractice-ComprehensivePracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		781AF82525DF82E900D28EF5 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		785F9C8325CFBB91000C29BF /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		7876E9D825CB9E6900BF16AB /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = ../../../../PerfactNet/PerfactNet/Network/HttpRequest.swift; sourceTree = "<group>"; };
 		7876E9D925CB9E6900BF16AB /* Moyaconfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Moyaconfig.swift; path = ../../../../PerfactNet/PerfactNet/Network/Moyaconfig.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 		78ACD79A25C92F62008CA828 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				781AF82525DF82E900D28EF5 /* BannerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -740,6 +743,7 @@
 				785F9C8425CFBB91000C29BF /* Screen.swift in Sources */,
 				78ACD7EA25C94370008CA828 /* FinanceController.swift in Sources */,
 				78A856C025CA937700161A2A /* NetImage.swift in Sources */,
+				781AF82625DF82E900D28EF5 /* BannerView.swift in Sources */,
 				78CB810525D22F9D00EC338E /* JokeAPI.swift in Sources */,
 				78A856A625CA7BE400161A2A /* HUD.swift in Sources */,
 				78A856B625CA89A800161A2A /* NewsModel.swift in Sources */,

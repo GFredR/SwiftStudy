@@ -13,25 +13,26 @@ class NewsController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var newsModel: NewsModel?
     
     lazy var refreshTool: UIRefreshControl = {
-        let refresh: UIRefreshControl = UIRefreshControl(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeght))
+        let refresh: UIRefreshControl = UIRefreshControl(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
         
         return refresh
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        GFRProgressHUD.show(view: self.view)
         newsTableView.delegate = self
         newsTableView.dataSource = self
         newsTableView.separatorStyle = .none
         setupTableUI()
         loadNewsData()
         setRefreshSetting()
+        
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        MBProgressHUD.showAdded(to: self.view, animated: true)
+        
     }
     
 
@@ -81,7 +82,7 @@ extension NewsController {
         HttpRequest.loadData(target: NewsApi.newsList(type: "shehui", key: "644dfb94bbda2b99f35a9756e76f2223"), model: NewsModel.self) { (model) in
             self.newsModel = model
             self.newsTableView.reloadData()
-            MBProgressHUD.hide(for: self.view, animated: true)
+            GFRProgressHUD.hide(view: self.view)
             self.newsTableView.separatorStyle = .singleLine
         } failure: { (errcode, message) in
             print(message)

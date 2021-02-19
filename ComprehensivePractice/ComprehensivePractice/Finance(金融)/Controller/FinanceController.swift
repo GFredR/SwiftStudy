@@ -8,22 +8,20 @@
 import UIKit
 
 class FinanceController: UIViewController {
-
+    lazy var banner: BannerView = BannerView(bannerFrame: CGRect(x: 0, y: CGFloat(NavHeight), width: ScreenWidth, height: ScreenHeight / 4))
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(touchBanner))
+        banner.addGestureRecognizer(tap)
+        view.addSubview(banner)
         // Do any additional setup after loading the view.
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension FinanceController {
+    @objc func touchBanner() -> Void {
+        print("hahha")
     }
-    */
-
 }

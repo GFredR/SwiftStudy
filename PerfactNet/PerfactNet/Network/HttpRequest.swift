@@ -29,11 +29,11 @@ public class HttpRequest {
             cache(model)
         }else {
             //读取缓存速度较快，无需显示hud；仅从网络加载数据时，显示hud。
-            GFRProgressHUD.show()
+            
         }
         
         provider.request(target) { result in
-            GFRProgressHUD.hide()
+            
             switch result {
             case let .success(response):
                 let model = try? response.map(D.self)

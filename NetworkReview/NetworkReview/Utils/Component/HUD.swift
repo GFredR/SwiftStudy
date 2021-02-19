@@ -39,15 +39,11 @@ class GFRAlert: NSObject {
 }
 
 class GFRProgressHUD {
-    class func show() -> Void {
-        if let window = UIApplication.shared.delegate?.window {
-            MBProgressHUD.showAdded(to: window!, animated: true)
-        }
+    class func show(view: UIView) -> Void {
+        MBProgressHUD.showAdded(to: view, animated: true)
     }
     
-    class func hide() -> Void {
-        if let window = UIApplication.shared.delegate?.window {
-            MBProgressHUD.hide(for: window!, animated: true)
-        }
+    class func hide(view: UIView) -> Void {
+        MBProgressHUD.hide(for: view, animated: true)
     }
 }

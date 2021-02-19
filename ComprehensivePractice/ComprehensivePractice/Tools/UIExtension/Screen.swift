@@ -7,4 +7,9 @@
 
 import UIKit
 let ScreenWidth = UIScreen.main.bounds.size.width
-let ScreenHeght = UIScreen.main.bounds.size.height
+let ScreenHeight = UIScreen.main.bounds.size.height
+//状态栏高度
+let StatusBarHeight = UIApplication.shared.statusBarFrame.size.height
+//导航栏高度
+let NavHeight = StatusBarHeight == 20 ? 64 : 84
+

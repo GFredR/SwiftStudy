@@ -14,6 +14,8 @@ class EntertainmentController: UIViewController, UITableViewDelegate, UITableVie
     var jokeModel: EntertainmentModel?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.jokeTable.separatorStyle = .none
+        GFRProgressHUD.show(view: self.view)
         jokeTable.delegate = self
         jokeTable.dataSource = self
         jokeTable.rowHeight = 159
@@ -32,6 +34,7 @@ extension EntertainmentController {
         HttpRequest.loadData(target: JokeAPI.jokeList(page: 1, pageSize: 15, key: "89a6bb7e80e9440fa99196ab57b3095a"), model: EntertainmentModel.self) { (model) in
             self.jokeModel = model
             self.jokeTable.mj_header?.endRefreshing()
+            
             self.jokeTable.reloadData()
         } failure: { (errcode, message) in
             print("\(String(describing: errcode))--------\(message)")
@@ -68,6 +71,8 @@ extension EntertainmentController {
         HttpRequest.loadData(target: JokeAPI.jokeList(page: 1, pageSize: 15, key: "89a6bb7e80e9440fa99196ab57b3095a"), model: EntertainmentModel.self) { (model) in
             self.jokeModel = model
             self.jokeTable.reloadData()
+            GFRProgressHUD.hide(view: self.view)
+            self.jokeTable.separatorStyle = .singleLine
         } failure: { (errcode, message) in
             print("\(String(describing: errcode))--------\(message)")
         }
