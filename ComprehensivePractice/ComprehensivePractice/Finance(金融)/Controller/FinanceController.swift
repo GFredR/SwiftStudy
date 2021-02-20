@@ -22,6 +22,20 @@ class FinanceController: UIViewController {
 
 extension FinanceController {
     @objc func touchBanner() -> Void {
-        print("hahha")
+        switch banner.bannerPage.currentPage {
+        case 0:
+            let goldStoryBoard = UIStoryboard(name: "Finance", bundle: nil)
+            let goldVC = goldStoryBoard.instantiateViewController(withIdentifier: "GoldController")
+            self.navigationController?.pushViewController(goldVC, animated: true)
+        case 1:
+            let changeRateStoryBoard = UIStoryboard(name: "Finance", bundle: nil)
+            let changeRateVC = changeRateStoryBoard.instantiateViewController(withIdentifier: "ChangeRateController")
+            self.navigationController?.pushViewController(changeRateVC, animated: true)
+        default:
+            let lotteryStoryBoard = UIStoryboard(name: "Finance", bundle: nil)
+            let lotteryVC = lotteryStoryBoard.instantiateViewController(withIdentifier: "LotteryController")
+            self.navigationController?.pushViewController(lotteryVC, animated: true)
+        }
+        print(banner.bannerPage.currentPage)
     }
 }

@@ -43,8 +43,75 @@
             </objects>
             <point key="canvasLocation" x="250.72463768115944" y="150.66964285714286"/>
         </scene>
+        <!--今日金价-->
+        <scene sceneID="Oao-fz-3cp">
+            <objects>
+                <viewController storyboardIdentifier="GoldController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FfG-6Q-gyY" customClass="GoldController" customModule="ComprehensivePractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QrD-hF-kA4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xe9-iU-sqT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="今日金价" id="wCX-nb-tcL">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="4CV-Y6-vs2">
+                            <connections>
+                                <action selector="backAction:" destination="FfG-6Q-gyY" id="S2I-TZ-Eww"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KXw-Wg-9Gx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="151"/>
+        </scene>
+        <!--今日汇率-->
+        <scene sceneID="x8p-SP-CVI">
+            <objects>
+                <viewController storyboardIdentifier="ChangeRateController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7e5-6G-N0n" customClass="ChangeRateController" customModule="ComprehensivePractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TCN-Us-7He">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6zF-Q0-t0x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="今日汇率" id="vk9-po-4vz">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="hNk-Qg-X4h">
+                            <connections>
+                                <action selector="backAction:" destination="7e5-6G-N0n" id="CQz-JO-E4u"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJo-Sm-ozw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="151"/>
+        </scene>
+        <!--彩票开奖-->
+        <scene sceneID="TMo-7x-tCe">
+            <objects>
+                <viewController storyboardIdentifier="LotteryController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YtM-zZ-6qI" customClass="LotteryController" customModule="ComprehensivePractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ebD-UR-htv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="u4J-vh-UkO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="彩票开奖" id="sUu-Qd-hym">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="GRh-k3-sI4">
+                            <connections>
+                                <action selector="backAction:" destination="YtM-zZ-6qI" id="tHK-b4-E64"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NxD-sO-b66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2320" y="151"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
         <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
