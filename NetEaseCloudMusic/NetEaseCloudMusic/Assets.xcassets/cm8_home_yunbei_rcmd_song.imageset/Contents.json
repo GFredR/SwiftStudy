@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "cm8_home_yunbei_rcmd_song.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "cm8_home_yunbei_rcmd_song@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "cm8_home_yunbei_rcmd_song@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

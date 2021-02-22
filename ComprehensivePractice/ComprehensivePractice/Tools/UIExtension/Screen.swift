@@ -13,3 +13,28 @@ let StatusBarHeight = UIApplication.shared.statusBarFrame.size.height
 //导航栏高度
 let NavHeight = StatusBarHeight == 20 ? 64 : 84
 
+extension UIView {
+    public var width: CGFloat {
+        return self.frame.size.width
+    }
+    
+    public var height: CGFloat {
+        return self.frame.size.height
+    }
+    
+    public var top: CGFloat {
+        return self.frame.origin.y
+    }
+    
+    public var bottom: CGFloat {
+        return self.frame.size.height + self.frame.origin.y
+    }
+    
+    public var left: CGFloat {
+        return self.frame.origin.x
+    }
+    
+    public var right: CGFloat {
+        return self.frame.size.width + self.frame.origin.x
+    }
+}

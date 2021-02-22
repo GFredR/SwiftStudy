@@ -8,6 +8,7 @@
 import UIKit
 
 class BannerView: UIView, UIScrollViewDelegate {
+    
     lazy var bannerView: UIScrollView = {
         let scrollView: UIScrollView = UIScrollView()
         scrollView.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight / 4)
@@ -17,10 +18,12 @@ class BannerView: UIView, UIScrollViewDelegate {
         scrollView.delegate = self
         for i in 0..<(imgArr.count + 1) {
             let imgView = UIImageView(frame: CGRect(x: CGFloat(i) * ScreenWidth, y: 0, width: ScreenWidth, height: ScreenHeight / 4))
+
             if i == imgArr.count {
                 imgView.image = UIImage(named: imgArr[0])
             } else {
                 imgView.image = UIImage(named: imgArr[i])
+                
             }
             // 以下是kingfisher的用法
             
@@ -47,6 +50,7 @@ class BannerView: UIView, UIScrollViewDelegate {
 //                }
 //            }
             scrollView.addSubview(imgView)
+            
 //            imgView.addSubview(bannerPage)
         }
         
@@ -55,9 +59,18 @@ class BannerView: UIView, UIScrollViewDelegate {
         return scrollView
     }()
     
+    lazy var scrollLabel: UILabel = {
+        let titleLabel: UILabel = UILabel()
+        titleLabel.frame = CGRect(x: 0, y: bannerView.bottom - 30, width: ScreenWidth, height: 30)
+        titleLabel.backgroundColor = .lightGray
+        titleLabel.textColor = .white
+        titleLabel.font = .systemFont(ofSize: 15)
+        return titleLabel
+    }()
+    
     lazy var bannerPage: UIPageControl = {
         let pageControl: UIPageControl = UIPageControl()
-        pageControl.frame = CGRect(x: ScreenWidth - 150, y: ScreenHeight / 4 - 80, width: 200, height: 100)
+        pageControl.frame = CGRect(x: bannerView.right - 135, y: scrollLabel.bottom - 38, width: 200, height: 50)
         pageControl.pageIndicatorTintColor = .white
         pageControl.currentPageIndicatorTintColor = .orange
         pageControl.numberOfPages = pageCount
@@ -72,6 +85,12 @@ class BannerView: UIView, UIScrollViewDelegate {
         let arr = ["gold","exchange_rate","lottery"]
         return arr
     }()
+    
+    lazy var titleArr: Array<String> = {
+        let arr = ["今日金价","今日汇率","彩票开奖"]
+        return arr
+    }()
+    
     lazy var pageCount: Int = {
         let pageNum = imgArr.count
         return pageNum
@@ -96,6 +115,7 @@ class BannerView: UIView, UIScrollViewDelegate {
         super.init(frame: bannerFrame)
         self.frame = bannerFrame
         self.addSubview(bannerView)
+        self.addSubview(scrollLabel)
         self.addSubview(bannerPage)
     }
     
@@ -130,10 +150,13 @@ extension BannerView {
         oldScrollOffset = point.x
         if point.x > ScreenWidth * CGFloat(pageCount - 1) + ScreenWidth * 0.5 && (bannerTimer == nil)  {
             bannerPage.currentPage = 0
+            scrollLabel.text = titleArr[0]
         } else if point.x > ScreenWidth * CGFloat(pageCount - 1) && (bannerTimer != nil) && isRight {
             bannerPage.currentPage = 0
+            scrollLabel.text = titleArr[0]
         } else {
             bannerPage.currentPage = Int((point.x + ScreenWidth * 0.5) / ScreenWidth)
+            scrollLabel.text = titleArr[Int((point.x + ScreenWidth * 0.5) / ScreenWidth)]
         }
         
         if point.x >= ScreenWidth * CGFloat(pageCount) {

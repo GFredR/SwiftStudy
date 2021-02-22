@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78588A0725E37C97002D8DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A0625E37C97002D8DF2 /* AppDelegate.swift */; };
+		78588A0925E37C97002D8DF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A0825E37C97002D8DF2 /* SceneDelegate.swift */; };
+		78588A0B25E37C97002D8DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A0A25E37C97002D8DF2 /* ViewController.swift */; };
+		78588A0E25E37C97002D8DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78588A0C25E37C97002D8DF2 /* Main.storyboard */; };
+		78588A1025E37C98002D8DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78588A0F25E37C98002D8DF2 /* Assets.xcassets */; };
+		78588A1325E37C98002D8DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78588A1125E37C98002D8DF2 /* LaunchScreen.storyboard */; };
+		78588A1E25E37C98002D8DF2 /* NetEaseCloudMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A1D25E37C98002D8DF2 /* NetEaseCloudMusicTests.swift */; };
+		78588A2925E37C98002D8DF2 /* NetEaseCloudMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A2825E37C98002D8DF2 /* NetEaseCloudMusicUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78588A1A25E37C98002D8DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 785889FB25E37C97002D8DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78588A0225E37C97002D8DF2;
+			remoteInfo = NetEaseCloudMusic;
+		};
+		78588A2525E37C98002D8DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 785889FB25E37C97002D8DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78588A0225E37C97002D8DF2;
+			remoteInfo = NetEaseCloudMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78588A0325E37C97002D8DF2 /* NetEaseCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetEaseCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78588A0625E37C97002D8DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78588A0825E37C97002D8DF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78588A0A25E37C97002D8DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78588A0D25E37C97002D8DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78588A0F25E37C98002D8DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78588A1225E37C98002D8DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78588A1425E37C98002D8DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78588A1925E37C98002D8DF2 /* NetEaseCloudMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetEaseCloudMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78588A1D25E37C98002D8DF2 /* NetEaseCloudMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetEaseCloudMusicTests.swift; sourceTree = "<group>"; };
+		78588A1F25E37C98002D8DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78588A2425E37C98002D8DF2 /* NetEaseCloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetEaseCloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78588A2825E37C98002D8DF2 /* NetEaseCloudMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetEaseCloudMusicUITests.swift; sourceTree = "<group>"; };
+		78588A2A25E37C98002D8DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78588A0025E37C97002D8DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78588A1625E37C98002D8DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78588A2125E37C98002D8DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		785889FA25E37C97002D8DF2 = {
+			isa = PBXGroup;
+			children = (
+				78588A0525E37C97002D8DF2 /* NetEaseCloudMusic */,
+				78588A1C25E37C98002D8DF2 /* NetEaseCloudMusicTests */,
+				78588A2725E37C98002D8DF2 /* NetEaseCloudMusicUITests */,
+				78588A0425E37C97002D8DF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78588A0425E37C97002D8DF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78588A0325E37C97002D8DF2 /* NetEaseCloudMusic.app */,
+				78588A1925E37C98002D8DF2 /* NetEaseCloudMusicTests.xctest */,
+				78588A2425E37C98002D8DF2 /* NetEaseCloudMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78588A0525E37C97002D8DF2 /* NetEaseCloudMusic */ = {
+			isa = PBXGroup;
+			children = (
+				78588A0625E37C97002D8DF2 /* AppDelegate.swift */,
+				78588A0825E37C97002D8DF2 /* SceneDelegate.swift */,
+				78588A0A25E37C97002D8DF2 /* ViewController.swift */,
+				78588A0C25E37C97002D8DF2 /* Main.storyboard */,
+				78588A0F25E37C98002D8DF2 /* Assets.xcassets */,
+				78588A1125E37C98002D8DF2 /* LaunchScreen.storyboard */,
+				78588A1425E37C98002D8DF2 /* Info.plist */,
+			);
+			path = NetEaseCloudMusic;
+			sourceTree = "<group>";
+		};
+		78588A1C25E37C98002D8DF2 /* NetEaseCloudMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				78588A1D25E37C98002D8DF2 /* NetEaseCloudMusicTests.swift */,
+				78588A1F25E37C98002D8DF2 /* Info.plist */,
+			);
+			path = NetEaseCloudMusicTests;
+			sourceTree = "<group>";
+		};
+		78588A2725E37C98002D8DF2 /* NetEaseCloudMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78588A2825E37C98002D8DF2 /* NetEaseCloudMusicUITests.swift */,
+				78588A2A25E37C98002D8DF2 /* Info.plist */,
+			);
+			path = NetEaseCloudMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78588A0225E37C97002D8DF2 /* NetEaseCloudMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78588A2D25E37C98002D8DF2 /* Build configuration list for PBXNativeTarget "NetEaseCloudMusic" */;
+			buildPhases = (
+				785889FF25E37C97002D8DF2 /* Sources */,
+				78588A0025E37C97002D8DF2 /* Frameworks */,
+				78588A0125E37C97002D8DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetEaseCloudMusic;
+			productName = NetEaseCloudMusic;
+			productReference = 78588A0325E37C97002D8DF2 /* NetEaseCloudMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78588A1825E37C98002D8DF2 /* NetEaseCloudMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78588A3025E37C98002D8DF2 /* Build configuration list for PBXNativeTarget "NetEaseCloudMusicTests" */;
+			buildPhases = (
+				78588A1525E37C98002D8DF2 /* Sources */,
+				78588A1625E37C98002D8DF2 /* Frameworks */,
+				78588A1725E37C98002D8DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78588A1B25E37C98002D8DF2 /* PBXTargetDependency */,
+			);
+			name = NetEaseCloudMusicTests;
+			productName = NetEaseCloudMusicTests;
+			productReference = 78588A1925E37C98002D8DF2 /* NetEaseCloudMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78588A2325E37C98002D8DF2 /* NetEaseCloudMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78588A3325E37C98002D8DF2 /* Build configuration list for PBXNativeTarget "NetEaseCloudMusicUITests" */;
+			buildPhases = (
+				78588A2025E37C98002D8DF2 /* Sources */,
+				78588A2125E37C98002D8DF2 /* Frameworks */,
+				78588A2225E37C98002D8DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78588A2625E37C98002D8DF2 /* PBXTargetDependency */,
+			);
+			name = NetEaseCloudMusicUITests;
+			productName = NetEaseCloudMusicUITests;
+			productReference = 78588A2425E37C98002D8DF2 /* NetEaseCloudMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		785889FB25E37C97002D8DF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					78588A0225E37C97002D8DF2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					78588A1825E37C98002D8DF2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 78588A0225E37C97002D8DF2;
+					};
+					78588A2325E37C98002D8DF2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 78588A0225E37C97002D8DF2;
+					};
+				};
+			};
+			buildConfigurationList = 785889FE25E37C97002D8DF2 /* Build configuration list for PBXProject "NetEaseCloudMusic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 785889FA25E37C97002D8DF2;
+			productRefGroup = 78588A0425E37C97002D8DF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78588A0225E37C97002D8DF2 /* NetEaseCloudMusic */,
+				78588A1825E37C98002D8DF2 /* NetEaseCloudMusicTests */,
+				78588A2325E37C98002D8DF2 /* NetEaseCloudMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78588A0125E37C97002D8DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78588A1325E37C98002D8DF2 /* LaunchScreen.storyboard in Resources */,
+				78588A1025E37C98002D8DF2 /* Assets.xcassets in Resources */,
+				78588A0E25E37C97002D8DF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78588A1725E37C98002D8DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78588A2225E37C98002D8DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		785889FF25E37C97002D8DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78588A0B25E37C97002D8DF2 /* ViewController.swift in Sources */,
+				78588A0725E37C97002D8DF2 /* AppDelegate.swift in Sources */,
+				78588A0925E37C97002D8DF2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78588A1525E37C98002D8DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78588A1E25E37C98002D8DF2 /* NetEaseCloudMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78588A2025E37C98002D8DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78588A2925E37C98002D8DF2 /* NetEaseCloudMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78588A1B25E37C98002D8DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78588A0225E37C97002D8DF2 /* NetEaseCloudMusic */;
+			targetProxy = 78588A1A25E37C98002D8DF2 /* PBXContainerItemProxy */;
+		};
+		78588A2625E37C98002D8DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78588A0225E37C97002D8DF2 /* NetEaseCloudMusic */;
+			targetProxy = 78588A2525E37C98002D8DF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78588A0C25E37C97002D8DF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78588A0D25E37C97002D8DF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78588A1125E37C98002D8DF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78588A1225E37C98002D8DF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78588A2B25E37C98002D8DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78588A2C25E37C98002D8DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78588A2E25E37C98002D8DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = NetEaseCloudMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NetEaseCloudMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		78588A2F25E37C98002D8DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = NetEaseCloudMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NetEaseCloudMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		78588A3125E37C98002D8DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = NetEaseCloudMusicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NetEaseCloudMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetEaseCloudMusic.app/NetEaseCloudMusic";
+			};
+			name = Debug;
+		};
+		78588A3225E37C98002D8DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = NetEaseCloudMusicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NetEaseCloudMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetEaseCloudMusic.app/NetEaseCloudMusic";
+			};
+			name = Release;
+		};
+		78588A3425E37C98002D8DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = NetEaseCloudMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NetEaseCloudMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetEaseCloudMusic;
+			};
+			name = Debug;
+		};
+		78588A3525E37C98002D8DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83A3UH43TP;
+				INFOPLIST_FILE = NetEaseCloudMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NetEaseCloudMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetEaseCloudMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		785889FE25E37C97002D8DF2 /* Build configuration list for PBXProject "NetEaseCloudMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78588A2B25E37C98002D8DF2 /* Debug */,
+				78588A2C25E37C98002D8DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78588A2D25E37C98002D8DF2 /* Build configuration list for PBXNativeTarget "NetEaseCloudMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78588A2E25E37C98002D8DF2 /* Debug */,
+				78588A2F25E37C98002D8DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78588A3025E37C98002D8DF2 /* Build configuration list for PBXNativeTarget "NetEaseCloudMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78588A3125E37C98002D8DF2 /* Debug */,
+				78588A3225E37C98002D8DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78588A3325E37C98002D8DF2 /* Build configuration list for PBXNativeTarget "NetEaseCloudMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78588A3425E37C98002D8DF2 /* Debug */,
+				78588A3525E37C98002D8DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 785889FB25E37C97002D8DF2 /* Project object */;
+}
