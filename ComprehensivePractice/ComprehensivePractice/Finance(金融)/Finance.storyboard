@@ -94,8 +94,51 @@
                     <view key="view" contentMode="scaleToFill" id="ebD-UR-htv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入彩票的相关信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5I-EW-jun">
+                                <rect key="frame" x="105" y="140" width="204" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入彩票ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JD5-xM-HRF">
+                                <rect key="frame" x="60" y="219" width="294" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入彩票期号（如没有请不要输入）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asj-iS-Dza">
+                                <rect key="frame" x="60" y="296" width="294" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL5-cO-Aju">
+                                <rect key="frame" x="60" y="608" width="294" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="RAF-Kz-BfN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="查询 ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="u4J-vh-UkO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="asj-iS-Dza" firstAttribute="leading" secondItem="JD5-xM-HRF" secondAttribute="leading" id="2RC-QZ-zx1"/>
+                            <constraint firstItem="t5I-EW-jun" firstAttribute="centerX" secondItem="ebD-UR-htv" secondAttribute="centerX" id="2WO-Wn-1QJ"/>
+                            <constraint firstItem="xL5-cO-Aju" firstAttribute="leading" secondItem="JD5-xM-HRF" secondAttribute="leading" id="68y-TF-h9N"/>
+                            <constraint firstItem="u4J-vh-UkO" firstAttribute="bottom" secondItem="xL5-cO-Aju" secondAttribute="bottom" constant="218" id="Bcy-98-7iM"/>
+                            <constraint firstItem="xL5-cO-Aju" firstAttribute="trailing" secondItem="JD5-xM-HRF" secondAttribute="trailing" id="HfG-JG-mF0"/>
+                            <constraint firstItem="asj-iS-Dza" firstAttribute="top" secondItem="JD5-xM-HRF" secondAttribute="bottom" constant="43" id="X04-pz-hLE"/>
+                            <constraint firstItem="u4J-vh-UkO" firstAttribute="trailing" secondItem="JD5-xM-HRF" secondAttribute="trailing" constant="60" id="cJk-Zn-n07"/>
+                            <constraint firstItem="asj-iS-Dza" firstAttribute="trailing" secondItem="JD5-xM-HRF" secondAttribute="trailing" id="ez9-V1-ymm"/>
+                            <constraint firstItem="JD5-xM-HRF" firstAttribute="leading" secondItem="u4J-vh-UkO" secondAttribute="leading" constant="60" id="pIr-Jk-JwM"/>
+                            <constraint firstItem="t5I-EW-jun" firstAttribute="top" secondItem="u4J-vh-UkO" secondAttribute="top" constant="96" id="rMA-sk-NFO"/>
+                            <constraint firstItem="JD5-xM-HRF" firstAttribute="top" secondItem="t5I-EW-jun" secondAttribute="bottom" constant="55" id="uzb-fa-Vzz"/>
+                            <constraint firstItem="xL5-cO-Aju" firstAttribute="centerX" secondItem="ebD-UR-htv" secondAttribute="centerX" id="yrH-nU-4DR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="彩票开奖" id="sUu-Qd-hym">
                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="GRh-k3-sI4">
@@ -107,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NxD-sO-b66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2320" y="151"/>
+            <point key="canvasLocation" x="2318.840579710145" y="150.66964285714286"/>
         </scene>
     </scenes>
     <resources>
@@ -116,6 +159,9 @@
         <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -12,6 +12,10 @@
 		7815AA4425E0A50A002A6428 /* LotteryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7815AA4325E0A50A002A6428 /* LotteryController.swift */; };
 		781AF82625DF82E900D28EF5 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781AF82525DF82E900D28EF5 /* BannerView.swift */; };
 		785F9C8425CFBB91000C29BF /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F9C8325CFBB91000C29BF /* Screen.swift */; };
+		786C04F525E495940093B4D3 /* GoldAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C04F425E495940093B4D3 /* GoldAPI.swift */; };
+		786C04FA25E497AC0093B4D3 /* GoldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C04F925E497AC0093B4D3 /* GoldModel.swift */; };
+		7873DA8325E79B2B008FB199 /* LotteryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7873DA8225E79B2B008FB199 /* LotteryAPI.swift */; };
+		7873DA8B25E79B85008FB199 /* LotteryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7873DA8A25E79B85008FB199 /* LotteryModel.swift */; };
 		7876E9DA25CB9E6900BF16AB /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7876E9D825CB9E6900BF16AB /* HttpRequest.swift */; };
 		7876E9DB25CB9E6900BF16AB /* Moyaconfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7876E9D925CB9E6900BF16AB /* Moyaconfig.swift */; };
 		7876E9F225CB9F9200BF16AB /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7876E9F125CB9F9200BF16AB /* NewsAPI.swift */; };
@@ -77,6 +81,10 @@
 		7815AA4325E0A50A002A6428 /* LotteryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryController.swift; sourceTree = "<group>"; };
 		781AF82525DF82E900D28EF5 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		785F9C8325CFBB91000C29BF /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		786C04F425E495940093B4D3 /* GoldAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldAPI.swift; sourceTree = "<group>"; };
+		786C04F925E497AC0093B4D3 /* GoldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldModel.swift; sourceTree = "<group>"; };
+		7873DA8225E79B2B008FB199 /* LotteryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryAPI.swift; sourceTree = "<group>"; };
+		7873DA8A25E79B85008FB199 /* LotteryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryModel.swift; sourceTree = "<group>"; };
 		7876E9D825CB9E6900BF16AB /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = ../../../../PerfactNet/PerfactNet/Network/HttpRequest.swift; sourceTree = "<group>"; };
 		7876E9D925CB9E6900BF16AB /* Moyaconfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Moyaconfig.swift; path = ../../../../PerfactNet/PerfactNet/Network/Moyaconfig.swift; sourceTree = "<group>"; };
 		7876E9F125CB9F9200BF16AB /* NewsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsAPI.swift; path = ../../../../PerfactNet/PerfactNet/NewsAPI.swift; sourceTree = "<group>"; };
@@ -165,6 +173,7 @@
 		7815AA3225E0A00D002A6428 /* FinanceDetail */ = {
 			isa = PBXGroup;
 			children = (
+				7873DA8125E79B14008FB199 /* API */,
 				7815AA3525E0A050002A6428 /* Controller */,
 				7815AA3325E0A032002A6428 /* Model */,
 				7815AA3425E0A03D002A6428 /* View */,
@@ -175,6 +184,8 @@
 		7815AA3325E0A032002A6428 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				786C04F925E497AC0093B4D3 /* GoldModel.swift */,
+				7873DA8A25E79B85008FB199 /* LotteryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +216,14 @@
 			path = UIExtension;
 			sourceTree = "<group>";
 		};
+		7873DA8125E79B14008FB199 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7873DA8225E79B2B008FB199 /* LotteryAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		78A8569825CA763300161A2A /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +232,7 @@
 				7876E9D925CB9E6900BF16AB /* Moyaconfig.swift */,
 				7876E9F125CB9F9200BF16AB /* NewsAPI.swift */,
 				78CB810425D22F9D00EC338E /* JokeAPI.swift */,
+				786C04F425E495940093B4D3 /* GoldAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -774,11 +794,14 @@
 				7876E9DB25CB9E6900BF16AB /* Moyaconfig.swift in Sources */,
 				7815AA3A25E0A4BD002A6428 /* GoldController.swift in Sources */,
 				78ACD7F425C943A8008CA828 /* NewsController.swift in Sources */,
+				786C04F525E495940093B4D3 /* GoldAPI.swift in Sources */,
 				78CB80FB25D21E5D00EC338E /* EntertainmentModel.swift in Sources */,
 				78A856A525CA7BE400161A2A /* GSaveFiles.swift in Sources */,
 				78ACD7CC25C93455008CA828 /* BaseTabBarController.swift in Sources */,
+				7873DA8B25E79B85008FB199 /* LotteryModel.swift in Sources */,
 				78A856A725CA7BE400161A2A /* TStrInt.swift in Sources */,
 				78A856BB25CA8EB300161A2A /* NewsCell.swift in Sources */,
+				786C04FA25E497AC0093B4D3 /* GoldModel.swift in Sources */,
 				7876E9DA25CB9E6900BF16AB /* HttpRequest.swift in Sources */,
 				78CB810025D222EE00EC338E /* JokeCell.swift in Sources */,
 				7815AA3F25E0A4D3002A6428 /* ChangeRateController.swift in Sources */,
@@ -795,6 +818,7 @@
 				7815AA4425E0A50A002A6428 /* LotteryController.swift in Sources */,
 				78ACD75425C92CCD008CA828 /* SceneDelegate.swift in Sources */,
 				78ACD7EF25C94390008CA828 /* MineController.swift in Sources */,
+				7873DA8325E79B2B008FB199 /* LotteryAPI.swift in Sources */,
 				78ACD7E525C9434C008CA828 /* EntertainmentController.swift in Sources */,
 				7876E9F225CB9F9200BF16AB /* NewsAPI.swift in Sources */,
 			);

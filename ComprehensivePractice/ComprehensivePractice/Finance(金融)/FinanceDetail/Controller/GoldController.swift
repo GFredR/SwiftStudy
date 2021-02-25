@@ -11,7 +11,7 @@ class GoldController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loadGoldData()
         // Do any additional setup after loading the view.
     }
     
@@ -30,4 +30,14 @@ class GoldController: UIViewController {
     }
     
 
+}
+extension GoldController {
+    func loadGoldData() -> Void {
+        HttpRequest.loadData(target: GoldAPI.goldenMessage(key: "efca0ba22b68ee905ea3cd9741b79042", v: "1"), model: GoldModel.self) { (model) in
+            print(model ?? "nil")
+        } failure: { (errorcode, message) in
+            print(message)
+        }
+
+    }
 }

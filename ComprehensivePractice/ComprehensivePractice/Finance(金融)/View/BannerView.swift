@@ -51,7 +51,6 @@ class BannerView: UIView, UIScrollViewDelegate {
 //            }
             scrollView.addSubview(imgView)
             
-//            imgView.addSubview(bannerPage)
         }
         
         createTimer()
