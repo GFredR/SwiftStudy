@@ -3,16 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1EAD26450C59906DFD24A3A0 /* Pods_NetEaseCloudMusic_NetEaseCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E981CBB05DCF9033E9681E5E /* Pods_NetEaseCloudMusic_NetEaseCloudMusicUITests.framework */; };
 		2EBE73F9E0AC39C85982F347 /* Pods_NetEaseCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CBA88D5703209A0B7F9B61 /* Pods_NetEaseCloudMusic.framework */; };
 		71221A3FE0B2A7EEF3FBCA1F /* Pods_NetEaseCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C19B89FFB61F54512C95A8C /* Pods_NetEaseCloudMusicTests.framework */; };
+		781281EE25EC7FB20046D278 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781281ED25EC7FB20046D278 /* MoyaConfig.swift */; };
+		781281F625EC7FED0046D278 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781281F525EC7FED0046D278 /* HttpRequest.swift */; };
+		781281FB25EC82BD0046D278 /* KeyedDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781281FA25EC82BD0046D278 /* KeyedDecoding.swift */; };
+		7812820025EC830D0046D278 /* GSaveFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781281FF25EC830D0046D278 /* GSaveFile.swift */; };
+		7812820525EC83280046D278 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812820425EC83280046D278 /* HUD.swift */; };
+		7812820A25EC834D0046D278 /* NetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812820925EC834D0046D278 /* NetImage.swift */; };
+		7812820F25EC83600046D278 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812820E25EC83600046D278 /* Screen.swift */; };
+		7812821525ECB7510046D278 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812821425ECB7510046D278 /* BaseTabBarController.swift */; };
+		7812821D25ECB76B0046D278 /* BaseTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7812821C25ECB76B0046D278 /* BaseTabBar.storyboard */; };
+		7812824325ECCCF70046D278 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7812824225ECCCF70046D278 /* Discovery.storyboard */; };
+		7812824825ECD17E0046D278 /* Ksong.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7812824725ECD17E0046D278 /* Ksong.storyboard */; };
+		7812824D25ECD1930046D278 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7812824C25ECD1930046D278 /* Mine.storyboard */; };
+		7812825225ECD1B70046D278 /* Podcast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7812825125ECD1B70046D278 /* Podcast.storyboard */; };
+		7812825725ECD2410046D278 /* CloudVillage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7812825625ECD2410046D278 /* CloudVillage.storyboard */; };
+		7812825F25ECDBC50046D278 /* CloudVillageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812825E25ECDBC50046D278 /* CloudVillageController.swift */; };
+		7812826425ECDBE10046D278 /* DiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812826325ECDBE10046D278 /* DiscoveryController.swift */; };
+		7812826925ECDBF20046D278 /* KsongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812826825ECDBF20046D278 /* KsongController.swift */; };
+		7812826E25ECDC020046D278 /* MineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812826D25ECDC020046D278 /* MineController.swift */; };
+		7812827325ECDC120046D278 /* PodcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812827225ECDC120046D278 /* PodcastController.swift */; };
+		7812828825ECDE8C0046D278 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812828725ECDE8C0046D278 /* LoginController.swift */; };
+		7812829025ECDE9E0046D278 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7812828F25ECDE9E0046D278 /* Login.storyboard */; };
 		78588A0725E37C97002D8DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A0625E37C97002D8DF2 /* AppDelegate.swift */; };
 		78588A0925E37C97002D8DF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A0825E37C97002D8DF2 /* SceneDelegate.swift */; };
-		78588A0B25E37C97002D8DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A0A25E37C97002D8DF2 /* ViewController.swift */; };
 		78588A0E25E37C97002D8DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78588A0C25E37C97002D8DF2 /* Main.storyboard */; };
 		78588A1025E37C98002D8DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78588A0F25E37C98002D8DF2 /* Assets.xcassets */; };
 		78588A1325E37C98002D8DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78588A1125E37C98002D8DF2 /* LaunchScreen.storyboard */; };
@@ -42,10 +62,30 @@
 		0CB39BDEC24BADC272C591AA /* Pods-NetEaseCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetEaseCloudMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-NetEaseCloudMusicTests/Pods-NetEaseCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		228916C4BE12F06A2D9F85DB /* Pods-NetEaseCloudMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetEaseCloudMusic.debug.xcconfig"; path = "Target Support Files/Pods-NetEaseCloudMusic/Pods-NetEaseCloudMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		43CBA88D5703209A0B7F9B61 /* Pods_NetEaseCloudMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetEaseCloudMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		781281ED25EC7FB20046D278 /* MoyaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
+		781281F525EC7FED0046D278 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		781281FA25EC82BD0046D278 /* KeyedDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecoding.swift; sourceTree = "<group>"; };
+		781281FF25EC830D0046D278 /* GSaveFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSaveFile.swift; sourceTree = "<group>"; };
+		7812820425EC83280046D278 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		7812820925EC834D0046D278 /* NetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetImage.swift; sourceTree = "<group>"; };
+		7812820E25EC83600046D278 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		7812821425ECB7510046D278 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		7812821C25ECB76B0046D278 /* BaseTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseTabBar.storyboard; sourceTree = "<group>"; };
+		7812824225ECCCF70046D278 /* Discovery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
+		7812824725ECD17E0046D278 /* Ksong.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ksong.storyboard; sourceTree = "<group>"; };
+		7812824C25ECD1930046D278 /* Mine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		7812825125ECD1B70046D278 /* Podcast.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Podcast.storyboard; sourceTree = "<group>"; };
+		7812825625ECD2410046D278 /* CloudVillage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CloudVillage.storyboard; sourceTree = "<group>"; };
+		7812825E25ECDBC50046D278 /* CloudVillageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudVillageController.swift; sourceTree = "<group>"; };
+		7812826325ECDBE10046D278 /* DiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryController.swift; sourceTree = "<group>"; };
+		7812826825ECDBF20046D278 /* KsongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KsongController.swift; sourceTree = "<group>"; };
+		7812826D25ECDC020046D278 /* MineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineController.swift; sourceTree = "<group>"; };
+		7812827225ECDC120046D278 /* PodcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastController.swift; sourceTree = "<group>"; };
+		7812828725ECDE8C0046D278 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		7812828F25ECDE9E0046D278 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		78588A0325E37C97002D8DF2 /* NetEaseCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetEaseCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78588A0625E37C97002D8DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78588A0825E37C97002D8DF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78588A0A25E37C97002D8DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78588A0D25E37C97002D8DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78588A0F25E37C98002D8DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78588A1225E37C98002D8DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,8 +141,252 @@
 				0CB39BDEC24BADC272C591AA /* Pods-NetEaseCloudMusicTests.debug.xcconfig */,
 				D70D75248866E2544EE8498F /* Pods-NetEaseCloudMusicTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		781281E925EC7EC40046D278 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				781281EC25EC7F7C0046D278 /* Component */,
+				781281EB25EC7F680046D278 /* UIExtension */,
+				781281EA25EC7F460046D278 /* Network */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		781281EA25EC7F460046D278 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				781281ED25EC7FB20046D278 /* MoyaConfig.swift */,
+				781281F525EC7FED0046D278 /* HttpRequest.swift */,
+				781281FA25EC82BD0046D278 /* KeyedDecoding.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		781281EB25EC7F680046D278 /* UIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7812820925EC834D0046D278 /* NetImage.swift */,
+				7812820E25EC83600046D278 /* Screen.swift */,
+			);
+			path = UIExtension;
+			sourceTree = "<group>";
+		};
+		781281EC25EC7F7C0046D278 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				781281FF25EC830D0046D278 /* GSaveFile.swift */,
+				7812820425EC83280046D278 /* HUD.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7812821325ECB6E10046D278 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7812821425ECB7510046D278 /* BaseTabBarController.swift */,
+				7812821C25ECB76B0046D278 /* BaseTabBar.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7812822E25ECCC980046D278 /* Discovery(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				7812822F25ECCC980046D278 /* Controller */,
+				7812823025ECCC980046D278 /* Model */,
+				7812823125ECCC980046D278 /* View */,
+			);
+			path = "Discovery(发现)";
+			sourceTree = "<group>";
+		};
+		7812822F25ECCC980046D278 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7812824225ECCCF70046D278 /* Discovery.storyboard */,
+				7812826325ECDBE10046D278 /* DiscoveryController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7812823025ECCC980046D278 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7812823125ECCC980046D278 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7812823225ECCC980046D278 /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				7812823325ECCC980046D278 /* Controller */,
+				7812823425ECCC980046D278 /* Model */,
+				7812823525ECCC980046D278 /* View */,
+			);
+			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		7812823325ECCC980046D278 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7812824C25ECD1930046D278 /* Mine.storyboard */,
+				7812826D25ECDC020046D278 /* MineController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7812823425ECCC980046D278 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7812823525ECCC980046D278 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7812823625ECCC980046D278 /* K Song(K歌) */ = {
+			isa = PBXGroup;
+			children = (
+				7812823725ECCC980046D278 /* Controller */,
+				7812823825ECCC980046D278 /* Model */,
+				7812823925ECCC980046D278 /* View */,
+			);
+			path = "K Song(K歌)";
+			sourceTree = "<group>";
+		};
+		7812823725ECCC980046D278 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7812824725ECD17E0046D278 /* Ksong.storyboard */,
+				7812826825ECDBF20046D278 /* KsongController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7812823825ECCC980046D278 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7812823925ECCC980046D278 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7812823A25ECCC980046D278 /* CloudVillage(云村) */ = {
+			isa = PBXGroup;
+			children = (
+				7812823B25ECCC980046D278 /* Controller */,
+				7812823C25ECCC980046D278 /* Model */,
+				7812823D25ECCC980046D278 /* View */,
+			);
+			path = "CloudVillage(云村)";
+			sourceTree = "<group>";
+		};
+		7812823B25ECCC980046D278 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7812825625ECD2410046D278 /* CloudVillage.storyboard */,
+				7812825E25ECDBC50046D278 /* CloudVillageController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7812823C25ECCC980046D278 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7812823D25ECCC980046D278 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7812823E25ECCC980046D278 /* Podcast(播客) */ = {
+			isa = PBXGroup;
+			children = (
+				7812823F25ECCC980046D278 /* Controller */,
+				7812824025ECCC980046D278 /* Model */,
+				7812824125ECCC980046D278 /* View */,
+			);
+			path = "Podcast(播客)";
+			sourceTree = "<group>";
+		};
+		7812823F25ECCC980046D278 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7812825125ECD1B70046D278 /* Podcast.storyboard */,
+				7812827225ECDC120046D278 /* PodcastController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7812824025ECCC980046D278 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7812824125ECCC980046D278 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7812828125ECDE220046D278 /* Login(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				7812828F25ECDE9E0046D278 /* Login.storyboard */,
+				7812828625ECDE450046D278 /* Model */,
+				7812828525ECDE420046D278 /* Controller */,
+				7812828225ECDE370046D278 /*  View */,
+			);
+			path = "Login(登录)";
+			sourceTree = "<group>";
+		};
+		7812828225ECDE370046D278 /*  View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = " View";
+			sourceTree = "<group>";
+		};
+		7812828525ECDE420046D278 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7812828725ECDE8C0046D278 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7812828625ECDE450046D278 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		785889FA25E37C97002D8DF2 = {
@@ -130,9 +414,16 @@
 		78588A0525E37C97002D8DF2 /* NetEaseCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				7812828125ECDE220046D278 /* Login(登录) */,
+				7812823A25ECCC980046D278 /* CloudVillage(云村) */,
+				7812822E25ECCC980046D278 /* Discovery(发现) */,
+				7812823625ECCC980046D278 /* K Song(K歌) */,
+				7812823225ECCC980046D278 /* Mine(我的) */,
+				7812823E25ECCC980046D278 /* Podcast(播客) */,
+				7812821325ECB6E10046D278 /* Base */,
+				781281E925EC7EC40046D278 /* Tools */,
 				78588A0625E37C97002D8DF2 /* AppDelegate.swift */,
 				78588A0825E37C97002D8DF2 /* SceneDelegate.swift */,
-				78588A0A25E37C97002D8DF2 /* ViewController.swift */,
 				78588A0C25E37C97002D8DF2 /* Main.storyboard */,
 				78588A0F25E37C98002D8DF2 /* Assets.xcassets */,
 				78588A1125E37C98002D8DF2 /* LaunchScreen.storyboard */,
@@ -277,9 +568,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7812824325ECCCF70046D278 /* Discovery.storyboard in Resources */,
+				7812824825ECD17E0046D278 /* Ksong.storyboard in Resources */,
 				78588A1325E37C98002D8DF2 /* LaunchScreen.storyboard in Resources */,
 				78588A1025E37C98002D8DF2 /* Assets.xcassets in Resources */,
+				7812824D25ECD1930046D278 /* Mine.storyboard in Resources */,
 				78588A0E25E37C97002D8DF2 /* Main.storyboard in Resources */,
+				7812825725ECD2410046D278 /* CloudVillage.storyboard in Resources */,
+				7812821D25ECB76B0046D278 /* BaseTabBar.storyboard in Resources */,
+				7812829025ECDE9E0046D278 /* Login.storyboard in Resources */,
+				7812825225ECD1B70046D278 /* Podcast.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +705,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78588A0B25E37C97002D8DF2 /* ViewController.swift in Sources */,
+				781281F625EC7FED0046D278 /* HttpRequest.swift in Sources */,
 				78588A0725E37C97002D8DF2 /* AppDelegate.swift in Sources */,
+				7812826E25ECDC020046D278 /* MineController.swift in Sources */,
+				7812827325ECDC120046D278 /* PodcastController.swift in Sources */,
+				7812820025EC830D0046D278 /* GSaveFile.swift in Sources */,
 				78588A0925E37C97002D8DF2 /* SceneDelegate.swift in Sources */,
+				7812820F25EC83600046D278 /* Screen.swift in Sources */,
+				7812825F25ECDBC50046D278 /* CloudVillageController.swift in Sources */,
+				7812826425ECDBE10046D278 /* DiscoveryController.swift in Sources */,
+				7812821525ECB7510046D278 /* BaseTabBarController.swift in Sources */,
+				7812828825ECDE8C0046D278 /* LoginController.swift in Sources */,
+				7812820A25EC834D0046D278 /* NetImage.swift in Sources */,
+				7812820525EC83280046D278 /* HUD.swift in Sources */,
+				781281EE25EC7FB20046D278 /* MoyaConfig.swift in Sources */,
+				7812826925ECDBF20046D278 /* KsongController.swift in Sources */,
+				781281FB25EC82BD0046D278 /* KeyedDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
