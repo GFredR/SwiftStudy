@@ -38,6 +38,7 @@
 		78588A1325E37C98002D8DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78588A1125E37C98002D8DF2 /* LaunchScreen.storyboard */; };
 		78588A1E25E37C98002D8DF2 /* NetEaseCloudMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A1D25E37C98002D8DF2 /* NetEaseCloudMusicTests.swift */; };
 		78588A2925E37C98002D8DF2 /* NetEaseCloudMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A2825E37C98002D8DF2 /* NetEaseCloudMusicUITests.swift */; };
+		78FE9F4525EF5E46002E7C1A /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE9F4425EF5E46002E7C1A /* BannerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		78588A2425E37C98002D8DF2 /* NetEaseCloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetEaseCloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78588A2825E37C98002D8DF2 /* NetEaseCloudMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetEaseCloudMusicUITests.swift; sourceTree = "<group>"; };
 		78588A2A25E37C98002D8DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78FE9F4425EF5E46002E7C1A /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
 		8C19B89FFB61F54512C95A8C /* Pods_NetEaseCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetEaseCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB49A6A8D48DFA31D299DF2 /* Pods-NetEaseCloudMusic-NetEaseCloudMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetEaseCloudMusic-NetEaseCloudMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-NetEaseCloudMusic-NetEaseCloudMusicUITests/Pods-NetEaseCloudMusic-NetEaseCloudMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D70D75248866E2544EE8498F /* Pods-NetEaseCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetEaseCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-NetEaseCloudMusicTests/Pods-NetEaseCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,8 +206,8 @@
 		7812822F25ECCC980046D278 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7812824225ECCCF70046D278 /* Discovery.storyboard */,
 				7812826325ECDBE10046D278 /* DiscoveryController.swift */,
+				7812824225ECCCF70046D278 /* Discovery.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,6 +215,7 @@
 		7812823025ECCC980046D278 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78FE9F4425EF5E46002E7C1A /* BannerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -713,6 +716,7 @@
 				78588A0925E37C97002D8DF2 /* SceneDelegate.swift in Sources */,
 				7812820F25EC83600046D278 /* Screen.swift in Sources */,
 				7812825F25ECDBC50046D278 /* CloudVillageController.swift in Sources */,
+				78FE9F4525EF5E46002E7C1A /* BannerModel.swift in Sources */,
 				7812826425ECDBE10046D278 /* DiscoveryController.swift in Sources */,
 				7812821525ECB7510046D278 /* BaseTabBarController.swift in Sources */,
 				7812828825ECDE8C0046D278 /* LoginController.swift in Sources */,

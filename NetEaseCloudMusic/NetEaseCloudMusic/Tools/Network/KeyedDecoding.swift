@@ -34,8 +34,15 @@ public extension KeyedDecodingContainer {
         return try decodeIfPresent(type, forKey: key) ?? 0
     }
     
+    func decode(_ type: Int16.Type, forKey key: KeyedDecodingContainer.Key) throws -> Int16 {
+        return try decodeIfPresent(type, forKey: key) ?? 0
+    }
+    
     func decode(_ type: UInt.Type, forKey key: KeyedDecodingContainer.Key) throws -> UInt {
         return try decodeIfPresent(type, forKey: key) ?? 0
+    }
+    func decode(_ type: [String].Type, forKey key: KeyedDecodingContainer.Key) throws -> [String] {
+        return try decodeIfPresent(type, forKey: key) ?? [""]
     }
     
     func decode<T>(_ type: T.Type, forKey key: KeyedDecodingContainer.Key) throws -> T where T: Decodable {
