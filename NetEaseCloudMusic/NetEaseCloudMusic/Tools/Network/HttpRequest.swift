@@ -36,6 +36,7 @@ public class HttpRequest {
             
             switch result {
             case let .success(response):
+                
                 let model = try? response.map(D.self)
                 success(model)
             case let .failure(error):

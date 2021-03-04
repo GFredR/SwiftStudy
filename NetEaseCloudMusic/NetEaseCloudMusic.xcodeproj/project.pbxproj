@@ -31,6 +31,8 @@
 		7812827325ECDC120046D278 /* PodcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812827225ECDC120046D278 /* PodcastController.swift */; };
 		7812828825ECDE8C0046D278 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812828725ECDE8C0046D278 /* LoginController.swift */; };
 		7812829025ECDE9E0046D278 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7812828F25ECDE9E0046D278 /* Login.storyboard */; };
+		783F6FB425F0C33A0022DE84 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F6FB325F0C33A0022DE84 /* BannerView.swift */; };
+		783F6FBA25F0C4750022DE84 /* BannerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F6FB925F0C4750022DE84 /* BannerAPI.swift */; };
 		78588A0725E37C97002D8DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A0625E37C97002D8DF2 /* AppDelegate.swift */; };
 		78588A0925E37C97002D8DF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A0825E37C97002D8DF2 /* SceneDelegate.swift */; };
 		78588A0E25E37C97002D8DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78588A0C25E37C97002D8DF2 /* Main.storyboard */; };
@@ -84,6 +86,8 @@
 		7812827225ECDC120046D278 /* PodcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastController.swift; sourceTree = "<group>"; };
 		7812828725ECDE8C0046D278 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		7812828F25ECDE9E0046D278 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		783F6FB325F0C33A0022DE84 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		783F6FB925F0C4750022DE84 /* BannerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAPI.swift; sourceTree = "<group>"; };
 		78588A0325E37C97002D8DF2 /* NetEaseCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetEaseCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78588A0625E37C97002D8DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78588A0825E37C97002D8DF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 		7812822E25ECCC980046D278 /* Discovery(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				783F6FB825F0C45D0022DE84 /* API */,
 				7812822F25ECCC980046D278 /* Controller */,
 				7812823025ECCC980046D278 /* Model */,
 				7812823125ECCC980046D278 /* View */,
@@ -223,6 +228,7 @@
 		7812823125ECCC980046D278 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				783F6FB325F0C33A0022DE84 /* BannerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -390,6 +396,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		783F6FB825F0C45D0022DE84 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				783F6FB925F0C4750022DE84 /* BannerAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		785889FA25E37C97002D8DF2 = {
@@ -720,8 +734,10 @@
 				7812826425ECDBE10046D278 /* DiscoveryController.swift in Sources */,
 				7812821525ECB7510046D278 /* BaseTabBarController.swift in Sources */,
 				7812828825ECDE8C0046D278 /* LoginController.swift in Sources */,
+				783F6FBA25F0C4750022DE84 /* BannerAPI.swift in Sources */,
 				7812820A25EC834D0046D278 /* NetImage.swift in Sources */,
 				7812820525EC83280046D278 /* HUD.swift in Sources */,
+				783F6FB425F0C33A0022DE84 /* BannerView.swift in Sources */,
 				781281EE25EC7FB20046D278 /* MoyaConfig.swift in Sources */,
 				7812826925ECDBF20046D278 /* KsongController.swift in Sources */,
 				781281FB25EC82BD0046D278 /* KeyedDecoding.swift in Sources */,

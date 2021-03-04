@@ -14,10 +14,10 @@ import Moya
  - Todo: 根据自己的需要更改，不能统一处理的移除下面的代码，并在DMAPI中实现
 
  **/
-let BaseUrl = "http://v.juhe.cn/"
+let BaseUrl = "http://localhost:3000/"
 public extension TargetType {
     var baseURL: URL {
-        return URL(string: BaseUrl) ?? URL(string: "http://v.juhe.cn/toutiao/index?".removingPercentEncoding!)!
+        return URL(string: BaseUrl) ?? URL(string: "http://localhost:3000/")!
     }
 
     var headers: [String : String]? {
