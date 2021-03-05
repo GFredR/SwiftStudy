@@ -49,12 +49,6 @@ struct BannerModel: Decodable {
             var pst: Int
             var t: Int
             var ar: [BannerAr]
-            struct BannerAr: Decodable {
-                var id: Int
-                var name: String
-                var tns: [String]
-                var ailias: [String]
-            }
             var alia: [String]
             var pop: Int
             var st: Int
@@ -64,6 +58,14 @@ struct BannerModel: Decodable {
             var crbt: String
             var cf: String
             var al: BannerAl
+            var dt: Int
+            struct BannerAr: Decodable {
+                var id: Int
+                var name: String
+                var tns: [String]
+                var ailias: [String]
+            }
+            
             struct BannerAl: Decodable {
                 var id: Int
                 var name: String
@@ -72,7 +74,7 @@ struct BannerModel: Decodable {
                 var pic_str: String
                 var pic: Int16
             }
-            var dt: Int
+            
             struct BannerHML: Decodable {
                 var br: Int
                 var fid: Int

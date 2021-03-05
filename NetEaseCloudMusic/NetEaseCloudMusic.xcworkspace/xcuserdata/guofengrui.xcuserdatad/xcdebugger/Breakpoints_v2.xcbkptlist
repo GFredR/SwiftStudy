@@ -16,8 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -34,6 +34,193 @@
             endingLineNumber = "41"
             landmarkName = "loadData(target:model:cache:success:failure:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20C997F5-75FD-4E2A-AB54-B9C4B672E099"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetEaseCloudMusic/Discovery(&#x53d1;&#x73b0;)/View/BannerView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "bannerView"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BEADAA6-3F89-481C-A3F3-2705A5A79AC7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetEaseCloudMusic/Discovery(&#x53d1;&#x73b0;)/View/BannerView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "titleArr"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "8BEADAA6-3F89-481C-A3F3-2705A5A79AC7 - 78084ced20c60ba4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetEaseCloudMusic.BannerView.titleArr.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "NetEaseCloudMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/NetEaseCloudMusic/NetEaseCloudMusic/Discovery(%E5%8F%91%E7%8E%B0)/View/BannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "8BEADAA6-3F89-481C-A3F3-2705A5A79AC7 - 98f66154f5ef4ebb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;Swift.String&gt; in NetEaseCloudMusic.BannerView.titleArr.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "NetEaseCloudMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/NetEaseCloudMusic/NetEaseCloudMusic/Discovery(%E5%8F%91%E7%8E%B0)/View/BannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "8BEADAA6-3F89-481C-A3F3-2705A5A79AC7 - 65bcf858e98e3a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetEaseCloudMusic.BannerView.titleArr.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "NetEaseCloudMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/NetEaseCloudMusic/NetEaseCloudMusic/Discovery(%E5%8F%91%E7%8E%B0)/View/BannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "8BEADAA6-3F89-481C-A3F3-2705A5A79AC7 - 2d3b292f2c6eed3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetEaseCloudMusic.BannerView.titleArr.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "NetEaseCloudMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/NetEaseCloudMusic/NetEaseCloudMusic/Discovery(%E5%8F%91%E7%8E%B0)/View/BannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "8BEADAA6-3F89-481C-A3F3-2705A5A79AC7 - e76f8979dfd9b5c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetEaseCloudMusic.BannerView.titleArr.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "NetEaseCloudMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/NetEaseCloudMusic/NetEaseCloudMusic/Discovery(%E5%8F%91%E7%8E%B0)/View/BannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F5DEAEF-81C1-466C-B890-609305591948"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetEaseCloudMusic/Discovery(&#x53d1;&#x73b0;)/View/BannerView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "BannerView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6F5DEAEF-81C1-466C-B890-609305591948 - 4f03e9d2e29ad3d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetEaseCloudMusic.BannerView.imgArr.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "NetEaseCloudMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/NetEaseCloudMusic/NetEaseCloudMusic/Discovery(%E5%8F%91%E7%8E%B0)/View/BannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "223">
+               </Location>
+               <Location
+                  uuid = "6F5DEAEF-81C1-466C-B890-609305591948 - d5423b90dbb642cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetEaseCloudMusic.BannerView.imgArr.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "NetEaseCloudMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/NetEaseCloudMusic/NetEaseCloudMusic/Discovery(%E5%8F%91%E7%8E%B0)/View/BannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "6F5DEAEF-81C1-466C-B890-609305591948 - d5cc861b5e24d919"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetEaseCloudMusic.BannerView.imgArr.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "NetEaseCloudMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/NetEaseCloudMusic/NetEaseCloudMusic/Discovery(%E5%8F%91%E7%8E%B0)/View/BannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "6F5DEAEF-81C1-466C-B890-609305591948 - 8741b65432931592"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetEaseCloudMusic.BannerView.imgArr.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "NetEaseCloudMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guofengrui/SwiftStudy/NetEaseCloudMusic/NetEaseCloudMusic/Discovery(%E5%8F%91%E7%8E%B0)/View/BannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

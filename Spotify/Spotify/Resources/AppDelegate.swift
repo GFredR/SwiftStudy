@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window.makeKeyAndVisible()
         self.window = window
+        
+//        print(AuthManager.shared.signInURL?.absoluteString)
         // Override point for customization after application launch.
         return true
     }

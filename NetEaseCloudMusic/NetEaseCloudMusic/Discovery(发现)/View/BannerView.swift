@@ -19,36 +19,23 @@ class BannerView: UIView, UIScrollViewDelegate {
         for i in 0..<(imgArr.count + 1) {
             let imgView = UIImageView(frame: CGRect(x: CGFloat(i) * ScreenWidth, y: 0, width: ScreenWidth, height: ScreenHeight / 4))
 
-            if i == imgArr.count {
-                imgView.image = UIImage(named: imgArr[0])
-            } else {
-                imgView.image = UIImage(named: imgArr[i])
-                
-            }
+//            if i == imgArr.count {
+//                imgView.image = UIImage(named: imgArr[0])
+//            } else {
+//                imgView.image = UIImage(named: imgArr[i])
+//
+//            }
             // 以下是kingfisher的用法
             
-//            if i == imgArr.count {
-//                imgView.kf.setImage(with: URL(string: imgArr[0]))
-//
-//                imgView.kf.setImage(with: URL(string: imgArr[0]), placeholder: UIImage(named: "1"), options: [KingfisherOptionsInfoItem.fromMemoryCacheOrRefresh]) { (result, error) in
-//                    if (result != 0) {
-//                        print(error)
-//                    } else {
-//                        print(result)
-//                    }
-//
-//                }
-//
-//            } else {
-//                imgView.kf.setImage(with: URL(string: imgArr[i]), placeholder: UIImage(named: "1"), options: [KingfisherOptionsInfoItem.fromMemoryCacheOrRefresh]) { (result, error) in
-//                    if (result != 0) {
-//                        print(error)
-//                    } else {
-//                        print(result)
-//                    }
-//
-//                }
-//            }
+            if i == imgArr.count {
+
+                imgView.setNetImage(url: imgArr[0])
+                   
+
+            } else {
+                imgView.setNetImage(url: imgArr[i])
+                  
+            }
             scrollView.addSubview(imgView)
             
         }
@@ -69,7 +56,7 @@ class BannerView: UIView, UIScrollViewDelegate {
     
     lazy var bannerPage: UIPageControl = {
         let pageControl: UIPageControl = UIPageControl()
-        pageControl.frame = CGRect(x: bannerView.right - 135, y: scrollLabel.bottom - 38, width: 200, height: 50)
+        pageControl.frame = CGRect(x: bannerView.right - 300, y: scrollLabel.bottom - 38, width: 300, height: 50)
         pageControl.pageIndicatorTintColor = .white
         pageControl.currentPageIndicatorTintColor = .orange
         pageControl.numberOfPages = pageCount
@@ -80,10 +67,11 @@ class BannerView: UIView, UIScrollViewDelegate {
     
     var bannerTimer: Timer?
     
-    lazy var imgArr: Array<String> = {
-        let arr = ["gold","exchange_rate","lottery"]
-        return arr
-    }()
+    lazy var imgArr = [String]()
+//        Array<String> = {
+//        let arr = [""]
+//        return arr
+//    }()
     
     lazy var titleArr: Array<String> = {
         let arr = ["今日金价","今日汇率","彩票开奖"]
@@ -113,9 +101,10 @@ class BannerView: UIView, UIScrollViewDelegate {
     init(bannerFrame: CGRect) {
         super.init(frame: bannerFrame)
         self.frame = bannerFrame
-        self.addSubview(bannerView)
-        self.addSubview(scrollLabel)
-        self.addSubview(bannerPage)
+        
+//        self.addSubview(bannerView)
+//        self.addSubview(scrollLabel)
+//        self.addSubview(bannerPage)
     }
     
     required init?(coder: NSCoder) {
@@ -146,13 +135,13 @@ extension BannerView {
         oldScrollOffset = point.x
         if point.x > ScreenWidth * CGFloat(pageCount - 1) + ScreenWidth * 0.5 && (bannerTimer == nil)  {
             bannerPage.currentPage = 0
-            scrollLabel.text = titleArr[0]
+//            scrollLabel.text = titleArr[0]
         } else if point.x > ScreenWidth * CGFloat(pageCount - 1) && (bannerTimer != nil) && isRight {
             bannerPage.currentPage = 0
-            scrollLabel.text = titleArr[0]
+//            scrollLabel.text = titleArr[0]
         } else {
             bannerPage.currentPage = Int((point.x + ScreenWidth * 0.5) / ScreenWidth)
-            scrollLabel.text = titleArr[Int((point.x + ScreenWidth * 0.5) / ScreenWidth)]
+//            scrollLabel.text = titleArr[Int((point.x + ScreenWidth * 0.5) / ScreenWidth)]
         }
         
         if point.x >= ScreenWidth * CGFloat(pageCount) {

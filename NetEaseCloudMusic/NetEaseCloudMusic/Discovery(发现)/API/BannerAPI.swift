@@ -18,9 +18,9 @@ extension BannerAPI: TargetType {
     //请求时的绝对路径是   baseURL + path
     var path: String {
         switch self {
-        case let .bannerInfo(type):
+        case .bannerInfo(_):
             
-            return "banner?type=\(type)"
+            return "banner?"
         }
     }
 
