@@ -62,8 +62,8 @@
             filePath = "NetEaseCloudMusic/Discovery(&#x53d1;&#x73b0;)/View/BannerView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "titleArr"
             landmarkType = "24">
             <Locations>
@@ -155,8 +155,8 @@
             filePath = "NetEaseCloudMusic/Discovery(&#x53d1;&#x73b0;)/View/BannerView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "BannerView"
             landmarkType = "3">
             <Locations>

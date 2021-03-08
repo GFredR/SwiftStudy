@@ -31,6 +31,7 @@
 		7812827325ECDC120046D278 /* PodcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812827225ECDC120046D278 /* PodcastController.swift */; };
 		7812828825ECDE8C0046D278 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812828725ECDE8C0046D278 /* LoginController.swift */; };
 		7812829025ECDE9E0046D278 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7812828F25ECDE9E0046D278 /* Login.storyboard */; };
+		7813A3E125F611BC00B59F6D /* RecomendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813A3E025F611BC00B59F6D /* RecomendModel.swift */; };
 		783F6FB425F0C33A0022DE84 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F6FB325F0C33A0022DE84 /* BannerView.swift */; };
 		783F6FBA25F0C4750022DE84 /* BannerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F6FB925F0C4750022DE84 /* BannerAPI.swift */; };
 		78588A0725E37C97002D8DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78588A0625E37C97002D8DF2 /* AppDelegate.swift */; };
@@ -86,6 +87,7 @@
 		7812827225ECDC120046D278 /* PodcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastController.swift; sourceTree = "<group>"; };
 		7812828725ECDE8C0046D278 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		7812828F25ECDE9E0046D278 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		7813A3E025F611BC00B59F6D /* RecomendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendModel.swift; sourceTree = "<group>"; };
 		783F6FB325F0C33A0022DE84 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		783F6FB925F0C4750022DE84 /* BannerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAPI.swift; sourceTree = "<group>"; };
 		78588A0325E37C97002D8DF2 /* NetEaseCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetEaseCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +202,7 @@
 		7812822E25ECCC980046D278 /* Discovery(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				7813A3DC25F6110C00B59F6D /* Recomend(推荐) */,
 				783F6FB825F0C45D0022DE84 /* API */,
 				7812822F25ECCC980046D278 /* Controller */,
 				7812823025ECCC980046D278 /* Model */,
@@ -396,6 +399,38 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7813A3DC25F6110C00B59F6D /* Recomend(推荐) */ = {
+			isa = PBXGroup;
+			children = (
+				7813A3DF25F6116700B59F6D /* Controllers */,
+				7813A3DE25F6115400B59F6D /* Views */,
+				7813A3DD25F6114000B59F6D /* Models */,
+			);
+			path = "Recomend(推荐)";
+			sourceTree = "<group>";
+		};
+		7813A3DD25F6114000B59F6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7813A3E025F611BC00B59F6D /* RecomendModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7813A3DE25F6115400B59F6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7813A3DF25F6116700B59F6D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		783F6FB825F0C45D0022DE84 /* API */ = {
@@ -734,6 +769,7 @@
 				7812826425ECDBE10046D278 /* DiscoveryController.swift in Sources */,
 				7812821525ECB7510046D278 /* BaseTabBarController.swift in Sources */,
 				7812828825ECDE8C0046D278 /* LoginController.swift in Sources */,
+				7813A3E125F611BC00B59F6D /* RecomendModel.swift in Sources */,
 				783F6FBA25F0C4750022DE84 /* BannerAPI.swift in Sources */,
 				7812820A25EC834D0046D278 /* NetImage.swift in Sources */,
 				7812820525EC83280046D278 /* HUD.swift in Sources */,

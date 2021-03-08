@@ -19,12 +19,6 @@ class BannerView: UIView, UIScrollViewDelegate {
         for i in 0..<(imgArr.count + 1) {
             let imgView = UIImageView(frame: CGRect(x: CGFloat(i) * ScreenWidth, y: 0, width: ScreenWidth, height: ScreenHeight / 4))
 
-//            if i == imgArr.count {
-//                imgView.image = UIImage(named: imgArr[0])
-//            } else {
-//                imgView.image = UIImage(named: imgArr[i])
-//
-//            }
             // 以下是kingfisher的用法
             
             if i == imgArr.count {
