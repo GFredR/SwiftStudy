@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.4.0)
+  - KakaJSON (1.1.2)
   - Kingfisher (5.15.7):
     - Kingfisher/Core (= 5.15.7)
   - Kingfisher/Core (5.15.7)
@@ -8,25 +9,33 @@ PODS:
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
+  - Result (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - KakaJSON
   - Kingfisher
   - MBProgressHUD
   - Moya
+  - Result
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KakaJSON
     - Kingfisher
     - MBProgressHUD
     - Moya
+    - Result
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   Kingfisher: 6e1a13523fcb1c86924ce53affe4ac957e544d59
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Result: ed341d2f236af425b803e690e9bd8fd0a0cb7c5a
 
-PODFILE CHECKSUM: ab5d9a33f020b33aa631843406de86b7089a2cdf
+PODFILE CHECKSUM: 9182715915563a48211c0f84e22773fff5354b4f
 
 COCOAPODS: 1.9.3

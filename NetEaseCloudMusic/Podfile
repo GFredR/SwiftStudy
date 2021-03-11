@@ -7,6 +7,9 @@ target 'NetEaseCloudMusic' do
 pod 'Moya'
 pod 'Kingfisher'
 pod 'MBProgressHUD'
+pod 'Alamofire'
+pod 'KakaJSON'
+pod 'Result'
   # Pods for NetEaseCloudMusic
 
   target 'NetEaseCloudMusicTests' do
