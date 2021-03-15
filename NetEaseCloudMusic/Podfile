@@ -10,6 +10,8 @@ pod 'MBProgressHUD'
 pod 'Alamofire'
 pod 'KakaJSON'
 pod 'Result'
+pod 'HandyJSON'
+pod 'SwiftyJSON'
   # Pods for NetEaseCloudMusic
 
   target 'NetEaseCloudMusicTests' do

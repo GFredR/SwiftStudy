@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import SwiftyJSON
+import HandyJSON
 class LoginController: UIViewController {
     var userModel: UserInfoModel?
 
@@ -23,11 +24,23 @@ class LoginController: UIViewController {
 
     }
     func login() -> Void {
-        HttpRequest.loadData(target: LoginAPI.loginAction(phone: phoneNumField.text!, password: pwdField.text!), model: UserInfoModel.self) { model in
-            self.userModel = model
-            print("-----------\(self.userModel)" ?? "a")
-        } failure: { (code, message) in
-            print(message)
+//        HttpRequest.loadData(target: LoginAPI.loginAction(phone: phoneNumField.text!, password: pwdField.text!), model: UserInfoModel.self) { model in
+//            self.userModel = model
+//            print("-----------\(self.userModel)" ?? "a")
+//        } failure: { (code, message) in
+//            print(message)
+//        }
+        NetWorkRequest(.login(parameters: ["phone": phoneNumField.text ?? "", "password": pwdField.text ?? ""])) { (data) in
+            let json = JSON(data)
+            
+            if let userInfo = JSONDeserializer<UserInfoModel>.deserializeFrom(json: json.description){
+                self.userModel = userInfo
+                print("------\(String(describing: self.userModel?.profile?.nickname))")
+            }
+            
+        } failed: { (error) in
+            print(error)
         }
+
     }
 }

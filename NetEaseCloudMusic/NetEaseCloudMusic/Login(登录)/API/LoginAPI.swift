@@ -18,7 +18,7 @@ extension LoginAPI: TargetType {
     //请求时的绝对路径是   baseURL + path
     var path: String {
         switch self {
-        case .loginAction(_, _):
+        case .loginAction:
             
             return "login/cellphone?"
         }
@@ -36,9 +36,9 @@ extension LoginAPI: TargetType {
     var task: Task {
         var params: [String: Any] = [:]
         switch self {
-        case let .loginAction(phone, password):
-            params["phone"] = phone
-            params["password"] = password
+        case .loginAction(let phone, let password):
+            params = ["phone": phone]
+            params = ["password": password]
 //        default:
 //            //不需要传参数的接口走这里
 //            return .requestPlain
