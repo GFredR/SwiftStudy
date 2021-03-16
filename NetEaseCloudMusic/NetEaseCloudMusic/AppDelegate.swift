@@ -13,6 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        if (UserDefaults.standard.value(forKey: "token") == nil) {
+            let loginStoryBoard = UIStoryboard.init(name: "Login", bundle: nil)
+            let loginVC = loginStoryBoard.instantiateInitialViewController()
+            window.rootViewController = loginVC
+        } else {
+            let tabStoryBoard = UIStoryboard.init(name: "BaseTabBar", bundle: nil)
+            let tabVC = tabStoryBoard.instantiateInitialViewController()
+            window.rootViewController = tabVC
+        }
+        window.makeKeyAndVisible()
+        self.window = window
         // Override point for customization after application launch.
         return true
     }

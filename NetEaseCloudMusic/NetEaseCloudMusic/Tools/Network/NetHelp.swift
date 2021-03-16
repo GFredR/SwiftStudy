@@ -195,6 +195,7 @@ func NetWorkRequest(_ target: API, isCarch: Bool = false, carchID: NSString = ""
     let lastStr = mutableSting.replacingOccurrences(of: "/", with: "-")
     let disPath = cachesDir + "/" + lastStr + "-.text"
     if isCarch == true {
+        
         DispatchQueue.global().async {
             do {
                 /// 获取json字符串
@@ -212,6 +213,7 @@ func NetWorkRequest(_ target: API, isCarch: Bool = false, carchID: NSString = ""
     
     return Provider.request(target) { result in
         // 隐藏hud
+        print("666666666666")
         switch result {
         case let .success(response):
             do {

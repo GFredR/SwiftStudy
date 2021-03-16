@@ -15,26 +15,38 @@ class GFRAlert: NSObject {
         case error
         case warning
     }
-    class func show(type: AlertType, text: String) -> Void {
-        if let window = UIApplication.shared.delegate?.window {
+    class func show(type: AlertType, text: String, view: UIView) -> Void {
+//        if let window = UIApplication.shared.delegate?.window {
             var image: UIImage
             switch type {
             case .success:
-                image = #imageLiteral(resourceName: "Alert_success")
+                if #available(iOS 13.0, *) {
+                    image = UIImage(systemName: "checkmark")!
+                } else {
+                    image = #imageLiteral(resourceName: "Alert_success")
+                }
             case .info:
-                image = #imageLiteral(resourceName: "Alert_success")
+                if #available(iOS 13.0, *) {
+                    image = UIImage(systemName: "burn")!
+                } else {
+                    image = #imageLiteral(resourceName: "Alert_success")
+                }
             case .error:
-                image = #imageLiteral(resourceName: "Alert_success")
+                if #available(iOS 13.0, *) {
+                    image = UIImage(systemName: "xmark")!
+                } else {
+                    image = #imageLiteral(resourceName: "Alert_success")
+                }
             case .warning:
                 image = #imageLiteral(resourceName: "Alert_success")
             }
-            let hud = MBProgressHUD.showAdded(to: window!, animated: true)
+            let hud = MBProgressHUD.showAdded(to: view, animated: true)
             hud.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
             hud.mode = .customView
             hud.customView = UIImageView(image: image)
             hud.label.text = text
             hud.hide(animated: true, afterDelay: 1.2)
-        }
+//        }
     }
 }
 

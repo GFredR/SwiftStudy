@@ -20,22 +20,38 @@ class LoginController: UIViewController {
     }
     
     @IBAction func loginAction(_ sender: Any) {
+        
        login()
 
     }
     func login() -> Void {
-//        HttpRequest.loadData(target: LoginAPI.loginAction(phone: phoneNumField.text!, password: pwdField.text!), model: UserInfoModel.self) { model in
-//            self.userModel = model
-//            print("-----------\(self.userModel)" ?? "a")
-//        } failure: { (code, message) in
-//            print(message)
-//        }
         NetWorkRequest(.login(parameters: ["phone": phoneNumField.text ?? "", "password": pwdField.text ?? ""])) { (data) in
             let json = JSON(data)
-            
+            GFRAlert.show(type: .info, text: "正在登录", view: self.view)
             if let userInfo = JSONDeserializer<UserInfoModel>.deserializeFrom(json: json.description){
                 self.userModel = userInfo
-                print("------\(String(describing: self.userModel?.profile?.nickname))")
+                if self.userModel?.code == 200 {
+                    UserDefaults.standard.setValue(self.userModel?.account?.id, forKey: "id")
+                    UserDefaults.standard.setValue(self.userModel?.profile?.nickname, forKey: "user_name")
+                    UserDefaults.standard.setValue(self.userModel?.profile?.userId, forKey: "user_id")
+                    UserDefaults.standard.setValue(self.userModel?.profile?.avatarUrl, forKey: "avatar_url")
+                    UserDefaults.standard.setValue(self.userModel?.token, forKey: "token")
+                    UserDefaults.standard.setValue(self.userModel?.account?.vipType, forKey: "token")
+                    UserDefaults.standard.setValue(self.userModel?.account?.viptypeVersion, forKey: "token")
+                    
+                    
+                    GFRAlert.show(type: .success, text: "登录成功", view: self.view)
+                    let tabStoryBoard = UIStoryboard.init(name: "BaseTabBar", bundle: nil)
+                    let tabVC = tabStoryBoard.instantiateInitialViewController()!
+                    tabVC.modalPresentationStyle = .fullScreen
+                    self.present(tabVC, animated: true) {
+                        
+                    }
+                   
+                } else {
+                    GFRAlert.show(type: .error, text: "登录失败", view: self.view)
+                    return
+                }
             }
             
         } failed: { (error) in

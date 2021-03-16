@@ -47,6 +47,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="may-Eg-L69"/>
                                 </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -62,8 +63,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="HOb-kQ-EQh"/>
                                 </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAY-OX-vtR">
                                 <rect key="frame" x="140" y="508" width="229" height="1"/>
